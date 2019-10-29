@@ -1,0 +1,55 @@
+///////////////////////////////////////////////
+
+
+
+// fullpage.css переназначения
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+	background: transparentize($c-gblue-dark, 0.5);
+	border: solid 1px transparentize($c-white, 0.5);
+	height: 6px;
+	width: 6px;
+	margin: -3px 0 0 -3px;
+}
+
+#fp-nav ul li .fp-tooltip {
+	color: $c-gblue-dark;
+	background: $c-white;
+	font-size: 12px;
+}
+
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+	opacity: 0.5;
+}
+
+#fp-nav ul li .fp-tooltip.fp-right {
+	right: 15px;
+	padding: 3px 15px 3px 7px;
+	border-radius: 3px 30px 30px 3px;
+}
+
+#fp-nav ul li .fp-tooltip.fp-left {
+	left: 15px;
+	padding: 3px 7rem 3px 15px;
+	border-radius: 30px 3px 3px 30px;
+}
+
+#fp-nav.fp-right {
+	right: 5px;
+}
+
+#fp-nav.fp-left {
+	left: 5px;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+	height: 14px;
+	width: 14px;
+	margin: -7px 0 0 -7px;
+	border-radius: 100%;
+}

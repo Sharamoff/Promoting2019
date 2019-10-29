@@ -5,15 +5,8 @@ $('#id_idx_fullpage').fullpage({
 	menu: '#id_idx_nav',
 	anchors: ['id_collage', 'id_agency', 'id_services', 'id_solutions', 'id_projects', 'id_clients', 'id_contacts'],
 	navigation: true,
-	navigationTooltips: ['>>>', 'Агентство','Услуги','Решения', 'Проекты', 'Клиенты', 'Контакты']
+	navigationTooltips: ['<', 'АГЕНТСТВО','УСЛУГИ','РЕШЕНИЯ', 'ПРОЕКТЫ', 'КЛИЕНТЫ', 'КОНТАКТЫ']
 });
-
-
-
-
-// tooltips
-
-$('[data-toggle="tooltip"]').tooltip();
 
 
 

@@ -61,6 +61,16 @@
 }
 
 @font-face {
+  font-family: 'Exo 2';
+  src: local('Exo 2'), local('Exo2-Bold'),
+  url('../fonts/exo2bold.woff2') format('woff2'),
+  url('../fonts/exo2bold.woff') format('woff'),
+  url('../fonts/exo2bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Exo 2 Black';
   src: local('Exo 2 Black'), local('Exo2-Black'),
   url('../fonts/exo2black.woff2') format('woff2'),
