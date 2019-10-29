@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensans-regular.eot');
+  src: url('../fonts/opensans-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-regular.woff') format('woff'),
+  url('../fonts/opensans-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensans-bold.eot');
+  src: url('../fonts/opensans-bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-bold.woff') format('woff'),
+  url('../fonts/opensans-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensans-italic.eot');
+  src: url('../fonts/opensans-italic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-italic.woff') format('woff'),
+  url('../fonts/opensans-italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensans-bolditalic.eot');
+  src: url('../fonts/opensans-bolditalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-bolditalic.woff') format('woff'),
+  url('../fonts/opensans-bolditalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+@font-face {
+  font-family: 'Exo 2 Extra Light';
+  src: local('Exo 2 Extra Light'), local('Exo2-ExtraLight'),
+  url('../fonts/exo2extralight.woff2') format('woff2'),
+  url('../fonts/exo2extralight.woff') format('woff'),
+  url('../fonts/exo2extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  src: local('Exo 2'), local('Exo2-Regular'),
+  url('../fonts/exo2.woff2') format('woff2'),
+  url('../fonts/exo2.woff') format('woff'),
+  url('../fonts/exo2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo 2 Black';
+  src: local('Exo 2 Black'), local('Exo2-Black'),
+  url('../fonts/exo2black.woff2') format('woff2'),
+  url('../fonts/exo2black.woff') format('woff'),
+  url('../fonts/exo2black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}

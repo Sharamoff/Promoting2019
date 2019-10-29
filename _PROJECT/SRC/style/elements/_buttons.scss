@@ -1,0 +1,124 @@
+///////////////////////////////////////////////
+
+
+
+// кнопки
+
+
+
+.btn {
+	font: bold $font-size-base $font-family-base;
+	color: $c-white;
+	padding: 1.5rem 3rem 1.6rem 3rem;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	border-radius: $border-radius;
+	background-color: $color-link;
+	line-height: $line-height-min;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+
+	&:hover {
+		background-color: $color-link-hover;
+		color: $c-white;
+	}
+
+	i {
+		margin-right: 0.8rem;
+		font-weight: normal;
+		font-size: 2.1rem;
+	}
+
+}
+
+.b-link {
+	font: bold $font-size-base $font-family-base;
+	color: $c-white;
+	padding: 1rem 5rem;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	border-radius: 6rem;
+	background-color: $color-link;
+	line-height: $line-height-min;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+
+	&:hover {
+		background-color: $color-link-hover;
+		color: $c-white;
+	}
+
+}
+
+.b-fmtool {
+	font: $font-size-base $font-family-base;
+	color: $c-white;
+	padding: 0.8rem 1.5rem;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	border-radius: $border-radius;
+	background-color: transparentize($c-white, 0.75);
+	line-height: $line-height-min;
+
+	&:hover {
+		background-color: $color-link-hover;
+		color: $c-white;
+	}
+
+}
+
+
+.b-close {
+	border: none;
+	background: none;
+	position: absolute;
+	top: 1.5rem;
+	right: 2rem;
+	z-index: $zindex-modal + 1;
+	display: inline-block;
+	padding: 0.5rem;
+	font: 2.1rem $fontawesome;
+	font-weight: lighter;
+	color: transparentize($c-white, 0.25);
+
+	@include media-breakpoint-down(xs) {
+		top: 1rem;
+		right: 1.2rem;
+	}
+
+	&:after {
+		content: "\f00d";
+	}
+
+	&:hover {
+		color: $c-white;
+	}
+
+}
+
+
+
+.b-tool {
+	background: transparentize($c-black, 0.9);
+	font-size: $font-size-basemin;
+	padding: 0.6rem 1.5rem;
+	color: $c-white;
+	border: solid 1px $c-white;
+	border-radius: 5rem;
+	opacity: 0.8;
+
+	&:hover {
+		opacity: 1;
+		background: transparentize($c-black, 0.8);
+	}
+
+	i {
+		margin-right: 0.8rem;
+	}
+
+}
+
+
+
+

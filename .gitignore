@@ -1,0 +1,4 @@
+*.rar
+materials/
+_PROJECT/node_modules/
+_PROJECT/.idea/

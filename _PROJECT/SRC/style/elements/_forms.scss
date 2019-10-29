@@ -1,0 +1,100 @@
+///////////////////////////////////////////////
+
+
+
+// формы
+
+
+FORM {
+
+	TD {
+		padding: 0.5rem 1rem 0.5rem 0;
+	}
+
+	label {
+		color: $c-black;
+		font-size: $font-size-base;
+		cursor: pointer;
+		line-height: 1 !important;
+		margin-top: 1rem;
+		margin-bottom: 0;
+
+		@include media-breakpoint-only(xs) {
+			margin-bottom: 0.5rem !important;
+		}
+
+	}
+
+	INPUT,
+	SELECT,
+	TEXTAREA {
+		font-size: $font-size-base !important;
+		font-family: $font-family-base !important;
+		color: $color-fields !important;
+		padding-left: 0.8rem !important;
+		padding-right: 0.8rem !important;
+	}
+
+	SELECT,
+	INPUT {
+		height: 3.3rem !important;
+	}
+
+
+	.form-group {
+		//margin-bottom: 1.5rem;
+
+		@include media-breakpoint-only(xs) {
+			margin-bottom: 0.5rem;
+		}
+
+		> label {
+			color: $c-gray;
+		}
+
+	}
+
+	.form-check {
+		margin-top: -1rem;
+		padding-left: 3rem;
+
+		.form-check-input {
+			margin-left: -3rem;
+			margin-top: 0.1rem;
+		}
+
+	}
+
+	.form-check-inline {
+		margin-right: 3rem;
+
+		.form-check-input {
+			margin-top: 1rem;
+		}
+
+	}
+
+
+	INPUT[type="checkbox"] {
+		width: 1.8rem;
+		height: 1.8rem;
+	}
+
+	INPUT[type="radio"] {
+		width: 1.8rem;
+		height: 1.8rem;
+	}
+
+	@include placeholder {
+		color: $color-placeholder;
+	}
+
+	.form--note {
+		font-size: $font-size-basemin;
+		color: $c-gray-light;
+		line-height: $line-height-def;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+}

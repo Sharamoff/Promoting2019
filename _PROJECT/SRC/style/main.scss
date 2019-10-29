@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+
+/* пустышки рефера для отладки */
+
+@import 'vendor/bootstrap/functions';
+@import 'vendor/bootstrap/variables';
+@import 'vendor/bootstrap/mixins';
+
+
+/* main */
+
+
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/grid';
+
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/footer';
+@import 'layout/modal';
+@import 'layout/pg-index';
+
+@import 'elements/headers';
+@import 'elements/elements';
+@import 'elements/links';
+@import 'elements/forms';
+@import 'elements/buttons';
+@import 'elements/lists';
+@import 'elements/tables';
+
+@import 'blocks/news';
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+///////////////////////////////////////////////
+// index.html
+
+
+
+.sc_idx_collage {
+	background-color: $c-gblue-dark;
+	background-image: url("../img/cl1.jpg");
+	background-position: center center;
+	background-size: cover;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 0;
+
+	.collage__slogan {
+		font-family: $font-family-hdr-light;
+		font-size: 8rem;
+		text-transform: uppercase;
+		color: $c-white;
+		margin-bottom: 10%;
+
+		@include media-breakpoint-down(sm) {
+			font-size: 3rem;
+			margin-bottom: 3rem;
+		}
+
+	}
+
+	.collage__dwnbtn {
+		width: 50px;
+		height: 140px;
+		background: url("../img/bkdot-r.svg") top center repeat-y;
+
+		@include media-breakpoint-down(sm) {
+			height: 80px;
+		}
+
+		.dwnbtn {
+			display: block;
+			background: $c-orange-dark url("../img/i-down.svg") 50% 50% no-repeat;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+		}
+
+	}
+
+}
+
+
+
+.sc_idx_agency {
+	background-color: $c-white;
+}
+
+
+
+.sc_idx_services {
+	background-color: $c-orange-dark;
+}
+
+
+
+.sc_idx_solutions {
+	background-color: $c-gray-lightermore;
+}
+
+
+
+.sc_idx_projects {
+	background-color: $c-white;
+}
+
+
+
+.sc_idx_clients {
+	background-color: $c-gblue-dark;
+}
+
+
+
+.sc_idx_contacts {
+	background-color: $c-gray-lightermore;
+}
+
+
+

@@ -1,0 +1,81 @@
+.modal {
+	top: 25%;
+
+	@include media-breakpoint-down(sm) {
+		top: 0;
+	}
+
+}
+
+
+
+.modal-open {
+
+}
+
+.modal-dialog {
+
+	.modal-content {
+		padding: 0 !important;
+		color: $c-white !important;
+		background: transparentize($c-gray, 0.10) !important;
+		border: solid 3px $c-gray;
+	}
+
+	.modal-header {
+		position: relative;
+		padding: 1.5rem 3rem;
+		margin: 0;
+		color: $c-gray-lightermore;
+		border-color: transparent;
+		box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);;
+
+		@include media-breakpoint-only(xs) {
+			padding: 1.5rem;
+		}
+
+		.mainhdr {
+			font-size: $font-size-h2;
+			color: $c-gray-lightermore;
+			text-shadow: none;
+			margin: 0;
+		}
+
+		button.close {
+			position: absolute;
+			top: 0.5rem;
+			right: 1rem;
+			color: $c-gray-lightermore;
+			font-size: 3rem;
+			font-weight: normal;
+		}
+
+	}
+
+	.modal-body {
+		padding: 0.5rem 3rem;
+		max-height: 40vh;
+		overflow-y: auto;
+		@include clearfix;
+
+		@include media-breakpoint-only(xs) {
+			padding: 0.5rem 1.5rem;
+			max-height: initial;
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

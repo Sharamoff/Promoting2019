@@ -1,0 +1,33 @@
+///////////////////////////////////////////////
+
+
+
+// ссылки
+
+
+
+A {
+	color: $color-link;
+	text-decoration: underline;
+
+	&:hover {
+		color: $color-link-hover;
+		text-decoration: none;
+	}
+
+}
+
+
+A[href^="tel"] {
+	color: $color-text !important;
+	text-decoration: none !important;
+}
+
+*:focus {
+	outline: none !important;
+	text-decoration: none !important;
+	color: inherit;
+	box-shadow: none !important;
+}
+
+
