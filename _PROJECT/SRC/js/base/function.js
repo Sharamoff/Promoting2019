@@ -12,13 +12,9 @@ $('#id_idx_fullpage').fullpage({
 
 // главное левое меню
 
-const toggler = document.querySelector('.nav-main__menutoggler');
-const nav  = document.querySelector('.nav-main');
-const menu = document.querySelector('.nav-main__menu');
-const body = document.body;
-toggler.addEventListener('click', () => {
-	toggler.classList.toggle('active');
-	nav.classList.toggle('active');
-	menu.classList.toggle('active');
-	body.classList.toggle('body--noscroll');
+$('.nav-main__menutoggler, .nav-main__menu a').on('click', function (event) {
+	$('.nav-main__menutoggler').toggleClass('active');
+	$('.nav-main').toggleClass('active');
+	$('.nav-main__menu').toggleClass('active');
+	event.stopPropagation();
 });

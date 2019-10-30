@@ -4,6 +4,19 @@
 
 // fullpage.css переназначения
 
+#fp-nav {
+	z-index: 9999;
+
+	@include media-breakpoint-down(mx) {
+		display: none;
+	}
+
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+
+}
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
 	background: transparentize($c-gblue-dark, 0.5);

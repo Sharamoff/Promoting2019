@@ -192,6 +192,7 @@ $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
+  mx: 811px, // add media mx for iPhoneX landscape
   lg: 992px,
   xl: 1200px
 ) !default;
@@ -207,6 +208,7 @@ $grid-breakpoints: (
 $container-max-widths: (
   sm: 540px,
   md: 720px,
+  mx: 820px, // add media mx for iPhoneX landscape
   lg: 960px,
   xl: 1140px
 ) !default;

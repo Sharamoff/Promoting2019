@@ -9,6 +9,9 @@ HTML {
 	@include media-breakpoint-only(md) {
 		font-size: $f-size-base-md;
 	}
+	@include media-breakpoint-only(mx) {
+		font-size: $f-size-base-mx
+	}
 	@include media-breakpoint-only(lg) {
 		font-size: $f-size-base-lg;
 	}
@@ -92,14 +95,6 @@ section {
 	}
 
 }
-
-
-
-.fffffullpage {
-	min-height: 100vh;
-	display: flex;
-}
-
 
 
 
