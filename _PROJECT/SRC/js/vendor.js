@@ -11,3 +11,5 @@
 //= vendor/fullpage.js
 
 //= vendor/slick.min.js
+
+//= vendor/jquery.spincrement.min.js

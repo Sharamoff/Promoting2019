@@ -24,6 +24,12 @@ H1 {
 	margin-bottom: 9rem;
 	line-height: $line-height-min;
 	text-transform: uppercase;
+
+	@include media-breakpoint-down(mx) {
+		margin-bottom: 3rem;
+		font-size: 3rem;
+	}
+
 }
 
 H2 {

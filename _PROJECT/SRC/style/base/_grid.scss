@@ -1,4 +1,5 @@
 HTML {
+	//overflow: hidden !important;
 
 	@include media-breakpoint-only(xs) {
 		font-size: $f-size-base-xs;
@@ -32,7 +33,7 @@ BODY {
 	color: $color-text;
 	line-height: $line-height-def;
 	position: relative;
-	overflow: hidden;
+	//overflow: hidden !important;
 }
 
 
@@ -66,12 +67,11 @@ article {
 }
 
 section {
-	padding-top: 5rem;
-	padding-bottom: 5rem;
-	@include clearfix;
+	margin-top: 0;
+	margin-bottom: 0;
 
-	@include media-breakpoint-only(xs) {
-		padding-top: 3rem;
+	.container {
+		padding-top: 5rem;
 		padding-bottom: 3rem;
 	}
 

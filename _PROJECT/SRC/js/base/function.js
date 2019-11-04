@@ -2,11 +2,14 @@
 // одностраничная секция главной
 
 $('#id_idx_fullpage').fullpage({
+	scrollBar: true, // нужно для wow
+	responsiveWidth: 815,
 	menu: '#id_idx_nav',
 	anchors: ['id_collage', 'id_agency', 'id_services', 'id_solutions', 'id_projects', 'id_clients', 'id_contacts'],
 	navigation: true,
 	navigationTooltips: ['<', 'АГЕНТСТВО','УСЛУГИ','РЕШЕНИЯ', 'ПРОЕКТЫ', 'КЛИЕНТЫ', 'КОНТАКТЫ']
 });
+
 
 
 
@@ -18,3 +21,7 @@ $('.nav-main__menutoggler, .nav-main__menu a').on('click', function (event) {
 	$('.nav-main__menu').toggleClass('active');
 	event.stopPropagation();
 });
+
+
+
+

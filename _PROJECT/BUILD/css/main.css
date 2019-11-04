@@ -85,8 +85,7 @@ BODY {
   background-color: white;
   color: #333333;
   line-height: 1.2;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
 
 .pagewrap {
   min-height: 100vh; }
@@ -109,16 +108,11 @@ article {
       padding-bottom: 3rem; } }
 
 section {
-  padding-top: 5rem;
-  padding-bottom: 5rem; }
-  section::after {
-    display: block;
-    clear: both;
-    content: ""; }
-  @media (max-width: 575.98px) {
-    section {
-      padding-top: 3rem;
-      padding-bottom: 3rem; } }
+  margin-top: 0;
+  margin-bottom: 0; }
+  section .container {
+    padding-top: 5rem;
+    padding-bottom: 3rem; }
 
 .row {
   position: relative; }
@@ -652,6 +646,7 @@ section {
       max-height: initial; } }
 
 .sc_idx_collage {
+  height: 100vh;
   background-color: #213c53;
   background-image: url("../img/cl1.jpg");
   background-position: left 50%;
@@ -667,11 +662,12 @@ section {
     @media (min-width: 811px) and (max-width: 991.98px) {
       .sc_idx_collage .collage__slogan {
         font-size: 3rem;
+        margin-top: -3rem;
         margin-bottom: 4rem; } }
     @media (max-width: 767.98px) {
       .sc_idx_collage .collage__slogan {
         font-size: 3rem;
-        margin-bottom: 3rem; } }
+        margin: 0 auto 30% 3rem; } }
   .sc_idx_collage .collage__dwnbtn {
     position: absolute;
     bottom: 0;
@@ -692,7 +688,55 @@ section {
       border-radius: 50%; }
 
 .sc_idx_agency {
-  background-color: white; }
+  background-color: white;
+  background-image: url("../img/bk-s1.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  color: #666666; }
+  @media (max-width: 1199.98px) {
+    .sc_idx_agency {
+      background-size: 70%; } }
+  @media (min-width: 811px) and (max-width: 991.98px) {
+    .sc_idx_agency {
+      background-size: 50%; } }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .sc_idx_agency {
+      background-size: 50%; } }
+  @media (max-width: 575.98px) {
+    .sc_idx_agency {
+      background-size: 100%; } }
+  .sc_idx_agency .idx_agency__text {
+    margin-bottom: 6rem; }
+    @media (max-width: 991.98px) {
+      .sc_idx_agency .idx_agency__text {
+        margin-bottom: 1.5rem; } }
+  .sc_idx_agency .block-cifr {
+    margin-bottom: 3rem; }
+    .sc_idx_agency .block-cifr .cifr__val {
+      font-family: "Exo 2", Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 10rem;
+      color: black;
+      line-height: 1; }
+      @media (max-width: 991.98px) {
+        .sc_idx_agency .block-cifr .cifr__val {
+          font-size: 6rem; } }
+      .sc_idx_agency .block-cifr .cifr__val .spin-numb {
+        color: #d13927; }
+      .sc_idx_agency .block-cifr .cifr__val .cifr__sup {
+        font-size: 5rem;
+        position: relative;
+        top: -4.5rem;
+        left: 1rem; }
+        @media (max-width: 991.98px) {
+          .sc_idx_agency .block-cifr .cifr__val .cifr__sup {
+            font-size: 3rem;
+            top: -2.5rem; } }
+    .sc_idx_agency .block-cifr .cifr__prop {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 0.5rem;
+      color: black; }
 
 .sc_idx_services {
   background-color: #d13927; }
@@ -779,6 +823,10 @@ H1 {
   margin-bottom: 9rem;
   line-height: 1.1;
   text-transform: uppercase; }
+  @media (max-width: 991.98px) {
+    .mainhdr {
+      margin-bottom: 3rem;
+      font-size: 3rem; } }
 
 H2 {
   font-family: OpenSans, Arial, Helvetica, sans-serif;
@@ -802,7 +850,7 @@ H1 A, H2 A, .mainhead A {
   text-decoration: none; }
 
 P {
-  line-height: 1.42857; }
+  line-height: 1.4; }
 
 .novis {
   display: none; }
