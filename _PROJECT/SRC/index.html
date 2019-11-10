@@ -82,7 +82,7 @@
 <nav class="nav-top">
 
 	<ul class="nav" id="id_idx_nav">
-		<li data-menuanchor="id_collage"><a href="#id_collage"><i class="far fa-arrow-circle-up"></i></a></li>
+		<li data-menuanchor="id_collage"><a href="#id_collage" title="Наверх"><i class="far fa-arrow-circle-up"></i></a></li>
 		<li data-menuanchor="id_agency"><a href="#id_agency">Агентство</a></li>
 		<li data-menuanchor="id_services"><a href="#id_services">Услуги</a></li>
 		<li data-menuanchor="id_solutions"><a href="#id_solutions">Решения</a></li>
@@ -182,7 +182,7 @@
 			<div class="row idx_services">
 
 				<div class="col-sm-4">
-					<div class="block-serv wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+					<div class="block-serv wow fadeInUp" data-wow-delay="1s">
 						<div class="serv__icon"><img src="img/is-serv1.svg" alt="Веб-разработка"></div>
 						<div class="serv__txt">
 							<p class="hdr">Веб-разработка</p>
@@ -197,7 +197,7 @@
 				</div>
 
 				<div class="col-sm-4">
-					<div class="block-serv wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.3s">
+					<div class="block-serv wow fadeInUp" data-wow-delay="1.3s">
 						<div class="serv__icon"><img src="img/is-serv2.svg" alt="Реклама и продвижение"></div>
 						<div class="serv__txt">
 							<p class="hdr">Реклама и<br>продвижение</p>
@@ -211,7 +211,7 @@
 				</div>
 
 				<div class="col-sm-4">
-					<div class="block-serv wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.6s">
+					<div class="block-serv wow fadeInUp" data-wow-delay="1.6s">
 						<div class="serv__icon"><img src="img/is-serv3.svg" alt="Сопровождение и поддержка"></div>
 						<div class="serv__txt">
 							<p class="hdr">Сопровождение и<br>поддержка</p>
@@ -231,10 +231,60 @@
 		<div class="container">
 
 
-			<p class="mainhdr wow bounceInLeft">Решения</p>
+			<p class="mainhdr wow bounceInLeft">Отраслевые решения</p>
 
 
 			<div class="row idx_solutions">
+
+
+				<div class="col-sm-6">
+					<div class="nav solutions__tab" id="id_solutions-tab" role="tablist" aria-orientation="vertical">
+
+						<div class="nav-link active wow fadeInUp" data-wow-delay="1s" id="id_tab-tourism" data-toggle="pill" href="#id_content-tourism" role="tab" aria-controls="id_content-tourism" aria-selected="true">
+							<img src="img/is-sol1.svg" alt="Туризм">
+							<a href="more1.html" class="hdr">Туризм</a>
+							<p>#туризм #путешествия #личный кабинет #таргетированная реклама #контент маркетинг #продвижение на профильных порталах #CRM #бизнес аналитика</p>
+						</div>
+
+						<div class="nav-link wow fadeInUp" data-wow-delay="1.3s" id="id_tab-medicine" data-toggle="pill" href="#id_content-medicine" role="tab" aria-controls="id_content-medicine" aria-selected="false">
+							<img src="img/is-sol2.svg" alt="Медицина">
+							<a href="more2.html" class="hdr">Медицина</a>
+							<p>#медицина #личный кабинет #таргетированная реклама #контент маркетинг #продвижение на профильных порталах #CRM #бизнес аналитика</p>
+						</div>
+
+						<div class="nav-link wow fadeInUp" data-wow-delay="1.6s" id="id_tab-tech" data-toggle="pill" href="#id_content-tech" role="tab" aria-controls="id_content-tech" aria-selected="false">
+							<img src="img/is-sol3.svg" alt="Спецтехника">
+							<a href="more3.html" class="hdr">Спецтехника</a>
+							<p>#спецтехника #автопогрузчики #трактора #экскаваторы #эвакуаторы #CRM</p>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="col-sm-6">
+					<div class="tab-content solutions__content wow fadeInRight" data-wow-delay="1.2s" id="id_solutions-content">
+
+						<div class="il-sol__sh"></div>
+
+						<div class="tab-pane fade show active" id="id_content-tourism" role="tabpanel" aria-labelledby="content-tourism-tab">
+							<a href="more1.html" class="b-more animated fadeInUp">Подробнее<i class="fal fa-long-arrow-alt-right"></i></a>
+							<img src="img/il-sol1.jpg" alt="Туризм">
+						</div>
+
+						<div class="tab-pane fade" id="id_content-medicine" role="tabpanel" aria-labelledby="content-medicine-tab">
+							<a href="more2.html" class="b-more animated fadeInUp">Подробнее<i class="fal fa-long-arrow-alt-right"></i></a>
+							<img src="img/il-sol2.jpg" alt="Медицина">
+						</div>
+
+						<div class="tab-pane fade" id="id_content-tech" role="tabpanel" aria-labelledby="content-tech-tab">
+							<a href="more3.html" class="b-more animated fadeInUp">Подробнее<i class="fal fa-long-arrow-alt-right"></i></a>
+							<img src="img/il-sol3.jpg" alt="Спецтехника">
+						</div>
+
+					</div>
+				</div>
+
 
 			</div>
 

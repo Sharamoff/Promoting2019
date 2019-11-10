@@ -31,6 +31,33 @@
 
 }
 
+.b-more {
+	display: inline-block;
+	background: $color-link;
+	border: none;
+	border-radius: 3rem;
+	color: $c-white;
+	padding: 0.5rem 3rem 0.6rem 3rem;
+	font-family: $font-family-hdr;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	white-space: nowrap;
+	transition: background-color 0.8s ease;
+
+	&:hover {
+		background: $color-link-hover;
+		color: $c-white;
+	}
+
+	i {
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+
+}
+
 .b-link {
 	font: bold $font-size-base $font-family-base;
 	color: $c-white;
@@ -50,23 +77,6 @@
 
 }
 
-.b-fmtool {
-	font: $font-size-base $font-family-base;
-	color: $c-white;
-	padding: 0.8rem 1.5rem;
-	text-align: center;
-	text-decoration: none;
-	border: none;
-	border-radius: $border-radius;
-	background-color: transparentize($c-white, 0.75);
-	line-height: $line-height-min;
-
-	&:hover {
-		background-color: $color-link-hover;
-		color: $c-white;
-	}
-
-}
 
 
 .b-close {
@@ -98,26 +108,6 @@
 }
 
 
-
-.b-tool {
-	background: transparentize($c-black, 0.9);
-	font-size: $font-size-basemin;
-	padding: 0.6rem 1.5rem;
-	color: $c-white;
-	border: solid 1px $c-white;
-	border-radius: 5rem;
-	opacity: 0.8;
-
-	&:hover {
-		opacity: 1;
-		background: transparentize($c-black, 0.8);
-	}
-
-	i {
-		margin-right: 0.8rem;
-	}
-
-}
 
 
 

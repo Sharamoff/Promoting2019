@@ -598,6 +598,7 @@
 		margin-left: 3rem;
 		margin-right: 1.5rem;
 		white-space: nowrap;
+		transition: all 0.8s ease;
 
 		@include media-breakpoint-down(mx) {
 			margin-left: 1.5rem;

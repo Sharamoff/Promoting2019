@@ -1,5 +1,4 @@
 HTML {
-	//overflow: hidden !important;
 
 	@include media-breakpoint-only(xs) {
 		font-size: $f-size-base-xs;
@@ -33,7 +32,6 @@ BODY {
 	color: $color-text;
 	line-height: $line-height-def;
 	position: relative;
-	//overflow: hidden !important;
 }
 
 
