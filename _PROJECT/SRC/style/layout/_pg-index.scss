@@ -96,6 +96,10 @@
 	.block-cifr {
 		margin-bottom: 3rem;
 
+		@include media-breakpoint-only(xs) {
+			text-align: center;
+		}
+
 		.cifr__val {
 			font-family: $font-family-hdr;
 			font-weight: bold;
@@ -386,17 +390,11 @@
 	padding-bottom: 3rem;
 
 	@include media-breakpoint-down(mx) {
-		padding-top: 0;
+		padding-top: 1.5rem;
 		padding-bottom: 1.5rem;
 	}
 
 	.idx_projects {
-
-		> [class*="col-"] {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
 
 	}
 

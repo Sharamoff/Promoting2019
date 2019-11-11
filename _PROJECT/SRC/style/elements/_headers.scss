@@ -30,6 +30,10 @@ H1 {
 		font-size: 3rem;
 	}
 
+	@include media-breakpoint-only(xs) {
+		text-align: center;
+	}
+
 }
 
 H2 {

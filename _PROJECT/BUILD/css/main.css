@@ -116,6 +116,14 @@ section {
 
 .row {
   position: relative; }
+  @media (max-width: 575.98px) {
+    .row > [class*="col-"] {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+              align-items: center; } }
   .row.row--margined > [class*="col-"] {
     margin-bottom: 30px; }
     @media (max-width: 575.98px) {
@@ -714,6 +722,9 @@ section {
         margin-bottom: 1.5rem; } }
   .sc_idx_agency .block-cifr {
     margin-bottom: 3rem; }
+    @media (max-width: 575.98px) {
+      .sc_idx_agency .block-cifr {
+        text-align: center; } }
     .sc_idx_agency .block-cifr .cifr__val {
       font-family: "Exo 2", Arial, Helvetica, sans-serif;
       font-weight: bold;
@@ -910,15 +921,8 @@ section {
   padding-bottom: 3rem; }
   @media (max-width: 991.98px) {
     .sc_idx_projects {
-      padding-top: 0;
+      padding-top: 1.5rem;
       padding-bottom: 1.5rem; } }
-  .sc_idx_projects .idx_projects > [class*="col-"] {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center; }
   .sc_idx_projects .block-project {
     position: relative;
     margin-bottom: 30px;
@@ -1031,6 +1035,9 @@ H1 {
     .mainhdr {
       margin-bottom: 4rem;
       font-size: 3rem; } }
+  @media (max-width: 575.98px) {
+    .mainhdr {
+      text-align: center; } }
 
 H2 {
   font-family: OpenSans, Arial, Helvetica, sans-serif;
