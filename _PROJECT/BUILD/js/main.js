@@ -24,6 +24,21 @@ $('.nav-main__menutoggler, .nav-main__menu a').on('click', function (event) {
 	$('.nav-main__menu').toggleClass('active');
 	event.stopPropagation();
 });
+
+
+
+
+//описание проекта на главной
+
+$('.block-project img').click( function() {
+	$('.project__note').fadeOut();
+	var note = $(this).attr('rel');
+	$('#id_' + note).fadeIn();
+})
+
+$('.project__note').click( function() {
+	$(this).fadeOut();
+})
 var wow = new WOW(
 	{
 		boxClass:     'wow',

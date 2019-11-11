@@ -381,6 +381,66 @@
 
 .sc_idx_projects {
 	background-color: $c-white;
+	color: $c-gray;
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+
+	@include media-breakpoint-down(mx) {
+		padding-top: 0;
+		padding-bottom: 1.5rem;
+	}
+
+	.idx_projects {
+
+		> [class*="col-"] {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+	}
+
+	.block-project {
+		position: relative;
+		margin-bottom: 30px;
+		cursor: pointer;
+
+		img {
+			width: 100%;
+			max-width: 360px;
+			border: solid 1px $color-border;
+		}
+
+	}
+
+	.project__note {
+		display: none;
+		position: absolute;
+		color: $c-white;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border: solid 1px $c-white;
+		z-index: 2;
+		background: transparentize($c-gblue-dark, 0.075);
+		font-size: 1.4rem;
+		padding: 1.5rem;
+		overflow-y: auto;
+		cursor: pointer;
+
+		a {
+			display: inline-block;
+			background: $c-white;
+			padding: 2px 8px 5px 8px;
+			margin-bottom: 1rem;
+			border-radius: 4px;
+			font: bold$font-size-basemax $font-family-hdr;
+			text-decoration: none;
+		}
+
+	}
+
 }
 
 

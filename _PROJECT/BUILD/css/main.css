@@ -904,7 +904,52 @@ section {
       border: solid 5px white; }
 
 .sc_idx_projects {
-  background-color: white; }
+  background-color: white;
+  color: #666666;
+  padding-top: 5rem;
+  padding-bottom: 3rem; }
+  @media (max-width: 991.98px) {
+    .sc_idx_projects {
+      padding-top: 0;
+      padding-bottom: 1.5rem; } }
+  .sc_idx_projects .idx_projects > [class*="col-"] {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center; }
+  .sc_idx_projects .block-project {
+    position: relative;
+    margin-bottom: 30px;
+    cursor: pointer; }
+    .sc_idx_projects .block-project img {
+      width: 100%;
+      max-width: 360px;
+      border: solid 1px #eeeeee; }
+  .sc_idx_projects .project__note {
+    display: none;
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: solid 1px white;
+    z-index: 2;
+    background: rgba(33, 60, 83, 0.925);
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    overflow-y: auto;
+    cursor: pointer; }
+    .sc_idx_projects .project__note a {
+      display: inline-block;
+      background: white;
+      padding: 2px 8px 5px 8px;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      font: bold 1.8rem "Exo 2", Arial, Helvetica, sans-serif;
+      text-decoration: none; }
 
 .sc_idx_clients {
   background-color: #213c53; }
@@ -969,7 +1014,7 @@ H1 {
   font-weight: normal;
   color: black;
   margin-top: 0;
-  margin-bottom: 9rem;
+  margin-bottom: 7rem;
   line-height: 1.1;
   text-transform: uppercase; }
 
@@ -979,7 +1024,7 @@ H1 {
   font-weight: normal;
   color: black;
   margin-top: 0;
-  margin-bottom: 6rem;
+  margin-bottom: 7rem;
   line-height: 1.1;
   text-transform: uppercase; }
   @media (max-width: 991.98px) {
@@ -1318,6 +1363,34 @@ FORM .form--note {
     background: #d13927;
     color: white; }
   .b-more i {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem; }
+
+.b-sc-more {
+  display: block;
+  width: 28rem;
+  background: #008aea;
+  border: none;
+  border-radius: 6rem;
+  color: white;
+  padding: 1.5rem 3rem 1.6rem 3rem;
+  font-family: "Exo 2", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-transition: background-color 0.8s ease;
+  transition: background-color 0.8s ease;
+  margin: 3rem auto; }
+  @media (max-width: 991.98px) {
+    .b-sc-more {
+      margin: 1.5rem auto; } }
+  .b-sc-more:hover {
+    background: #d13927;
+    color: white; }
+  .b-sc-more i {
     margin-left: 0.5rem;
     margin-right: 0.5rem; }
 

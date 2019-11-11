@@ -58,6 +58,41 @@
 
 }
 
+.b-sc-more {
+	display: block;
+	width: 28rem;
+	background: $color-link;
+	border: none;
+	border-radius: 6rem;
+	color: $c-white;
+	padding: 1.5rem 3rem 1.6rem 3rem;
+	font-family: $font-family-hdr;
+	font-size: $font-size-basemax;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	white-space: nowrap;
+	transition: background-color 0.8s ease;
+	margin: 3rem auto;
+
+	@include media-breakpoint-down(mx) {
+		margin: 1.5rem auto;
+	}
+
+	&:hover {
+		background: $color-link-hover;
+		color: $c-white;
+	}
+
+	i {
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
+
+}
+
+
 .b-link {
 	font: bold $font-size-base $font-family-base;
 	color: $c-white;
