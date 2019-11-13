@@ -47,6 +47,11 @@
 			height: 80px;
 		}
 
+		@include media-breakpoint-only(xs) {
+			left: 50%;
+			margin-left: -25px;
+		}
+
 		.dwnbtn {
 			display: block;
 			background: $c-orange-dark url("../img/i-down.svg") 50% 50% no-repeat;
@@ -172,6 +177,16 @@
 
 	.block-serv {
 
+		@include media-breakpoint-down(xs) {
+			text-align: center;
+
+			ul {
+				list-style: none;
+				margin-left: -1.5rem;
+			}
+
+		}
+
 		.serv__icon {
 			margin-bottom: 2rem;
 
@@ -273,10 +288,14 @@
 		flex-direction: column;
 		margin-bottom: 0.5rem;
 
+		@include media-breakpoint-down(xs) {
+			display: block;
+		}
+
 		.nav-link {
 			position: relative;
-			margin-top: 1.5rem;
-			margin-bottom: 1.5rem;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
 			text-decoration: none;
 			color: $c-black;
 			padding: 1rem 1rem 0.5rem 14rem;
@@ -323,21 +342,22 @@
 
 			}
 
+			p {
+				line-height: 1.4;
+				font-size: $font-size-basemin;
+			}
+
 		}
 
 	}
 
 	.solutions__content {
-		height: 60rem;
+		height: 50rem;
 		overflow: hidden;
 		padding: 1.5rem 1.5rem 0 1.5rem;
 		background: $c-white;
 		border-radius: 1rem;
 		position: relative;
-
-		@include media-breakpoint-down(mx) {
-			height: 50rem;
-		}
 
 		@include media-breakpoint-only(md) {
 			height: auto;
@@ -386,13 +406,6 @@
 .sc_idx_projects {
 	background-color: $c-white;
 	color: $c-gray;
-	padding-top: 5rem;
-	padding-bottom: 3rem;
-
-	@include media-breakpoint-down(mx) {
-		padding-top: 1.5rem;
-		padding-bottom: 1.5rem;
-	}
 
 	.idx_projects {
 
@@ -407,6 +420,11 @@
 			width: 100%;
 			max-width: 360px;
 			border: solid 1px $color-border;
+		}
+
+		&:hover {
+			background: $c-white;
+			box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
 		}
 
 	}
@@ -445,12 +463,180 @@
 
 .sc_idx_clients {
 	background-color: $c-gblue-dark;
+	background-image: url("../img/bk-s4.jpg");
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $c-white;
+
+	.idx_clients {
+
+	}
+
+	.mainhdr {
+		color: $c-white;
+	}
+
+	.block-client {
+		background: transparentize($c-white, 0.95);
+		border: solid 1px $c-gblue;
+		transition: background-color 1s;
+		margin-bottom: 30px;
+		text-align: center;
+
+		img {
+			width: 100%;
+			max-width: 250px;
+			height: auto;
+			filter: grayscale(1) brightness(100);
+		}
+
+		&:hover {
+			background: $c-white;
+			box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+
+			img {
+				filter: none;
+			}
+
+		}
+
+	}
+
 }
 
 
 
 .sc_idx_contacts {
-	background-color: $c-gray-lightermore;
+	background-color: $c-white;
+	background-image: url("../img/bk-s5.svg");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	color: $c-gray;
+
+	@include media-breakpoint-down(lg) {
+		background-size: 70%;
+	}
+
+	@include media-breakpoint-only(mx) {
+		background-size: 50%;
+	}
+
+	@include media-breakpoint-only(sm) {
+		background-size: 50%;
+	}
+
+	@include media-breakpoint-down(xs) {
+		background-size: 100%;
+	}
+
+	.idx_contacts {
+
+	}
+
+	.block-contact {
+
+		p {
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+			font-size: $font-size-basemax;
+
+			@include media-breakpoint-down(mx) {
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+				font-size: $font-size-base;
+			}
+
+		}
+
+		.hdr {
+			font: bold 2.5rem $font-family-hdr;
+			color: $c-orange-dark;
+			text-transform: uppercase;
+		}
+
+		.addr {
+			font-size: $font-size-base;
+
+			a {
+				text-decoration: none;
+				border-bottom: dashed 1px $color-link;
+
+				&:hover {
+					border-color: transparent;
+				}
+
+			}
+
+			i {
+				margin-right: 1rem;
+			}
+
+		}
+
+	}
+
+	.contact__form {
+		border-left: solid 1px $c-gray-lighter;
+		padding: 3.5rem 3rem 3rem 6rem;
+
+		@include media-breakpoint-down(lg) {
+			padding: 3.5rem 1.5rem 3rem 3rem;
+		}
+
+		@include media-breakpoint-down(mx) {
+			border: none;
+			padding: 3.5rem 1.5rem 3rem 1.5rem;
+		}
+
+	}
+
+	.idx_promoting {
+
+	}
+
+	.block-promoting {
+		margin-top: -10rem;
+		font-size:  14px;
+
+		@include media-breakpoint-down(mx) {
+			margin-top: 3rem;
+		}
+
+		@include media-breakpoint-down(xs) {
+			font-size:  12px;
+			text-align: center;
+			margin-bottom: 6rem;
+		}
+
+		P {
+			line-height: 1.1;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+
+		img {
+			float: left;
+			padding-right: 15px;
+			margin-right: 15px;
+			border-right: dotted 1px $c-gray;
+
+			@include media-breakpoint-down(xs) {
+				float: none;
+				display: block;
+				padding: 0;
+				margin: 1.5rem auto;
+				border: none;
+			}
+
+		}
+
+		p {
+			line-height: 1.1;
+		}
+
+	}
+
 }
 
 

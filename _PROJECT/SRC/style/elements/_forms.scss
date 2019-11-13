@@ -42,7 +42,6 @@ FORM {
 
 
 	.form-group {
-		//margin-bottom: 1.5rem;
 
 		@include media-breakpoint-only(xs) {
 			margin-bottom: 0.5rem;
@@ -98,3 +97,127 @@ FORM {
 	}
 
 }
+
+
+
+
+
+.form--order {
+
+	*:focus {
+		background-color: $c-orange-dark;
+	}
+
+	@include placeholder {
+		color: $c-orange-lighter;
+	}
+
+	.form-group {
+		background: url("../img/bk-fldorder.gif") left bottom no-repeat;
+		padding-bottom: 3px;
+		margin-bottom: 3rem;
+	}
+
+	INPUT,
+	SELECT,
+	TEXTAREA {
+		font-size: $font-size-base !important;
+		font-family: $font-family-base !important;
+		color: $c-white !important;
+		padding-left: 4rem !important;
+		padding-right: 0.8rem !important;
+		border: 0;
+		background-color: $c-orange-dark;
+		line-height: 1.1;
+	}
+
+	INPUT,
+	TEXTAREA {
+		border-radius: 5px 5px 5px 0;
+	}
+
+	SELECT,
+	INPUT {
+		height: 4rem !important;
+	}
+
+	TEXTAREA {
+		height: 12rem !important;
+		padding-top: 1.2rem;
+	}
+
+
+	.fld--name {
+		background-image: url("../img/bk-fldname.svg");
+		background-position: left;
+		background-repeat: no-repeat;
+	}
+
+	.fld--tel {
+		background-image: url("../img/bk-fldtel.svg");
+		background-position: left;
+		background-repeat: no-repeat;
+	}
+
+	.fld--email {
+		background-image: url("../img/bk-fldemail.svg");
+		background-position: left;
+		background-repeat: no-repeat;
+	}
+
+	.fld--note {
+		background-image: url("../img/bk-fldmsg.svg");
+		background-position: left top;
+		background-repeat: no-repeat;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

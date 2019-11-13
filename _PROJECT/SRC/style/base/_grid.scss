@@ -39,6 +39,10 @@ BODY {
 .pagewrap {
 	min-height: 100vh;
 
+	@include media-breakpoint-down(mx) {
+		min-height: auto;
+	}
+
 	> section {
 		padding-left: 10rem;
 
@@ -84,6 +88,11 @@ section {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
+			> * {
+				min-width: 90vw;
+			}
+
 		}
 
 	}

@@ -19,8 +19,9 @@ A {
 
 
 A[href^="tel"] {
-	color: $color-text !important;
+	color: $c-black !important;
 	text-decoration: none !important;
+	white-space: nowrap;
 }
 
 *:focus {

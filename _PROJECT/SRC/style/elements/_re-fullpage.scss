@@ -9,11 +9,7 @@
 #fp-nav {
 	z-index: 9999;
 
-	@include media-breakpoint-down(mx) {
-		display: none;
-	}
-
-	@include media-breakpoint-down(sm) {
+	@include media-breakpoint-down(lg) {
 		display: none;
 	}
 
