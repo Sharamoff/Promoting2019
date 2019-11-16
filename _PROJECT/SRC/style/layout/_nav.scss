@@ -39,21 +39,17 @@
 .nav-main__menutoggler {
 	position: absolute;
 	z-index: 999;
-	height: 60px;
+	height: 50px;
 	width: 100%;
 	outline: none;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
-	padding: 15px ($mainbar-w-xl - 24)/2;
+	padding: 15px 0 15px 19px;
 	background: $c-orange-light;
 
-	@include media-breakpoint-only(mx) {
-		padding: 15px ($mainbar-w-mx - 24)/2;
-	}
-
-	@include media-breakpoint-down(md) {
-		padding: 15px ($mainbar-w-md - 24)/2;
+	@include media-breakpoint-down(mx) {
+		height: 40px;
 	}
 
 	@include media-breakpoint-down(sm) {
@@ -115,8 +111,6 @@
 	align-content: center;
 	background-color: transparentize($c-orange, 0.85);
 	padding-bottom: 3rem;
-	overflow-y: auto;
-	overflow-x: hidden;
 
 	@include media-breakpoint-only(lg) {
 		width: $mainbar-w-lg;
@@ -141,8 +135,12 @@
 	.bar-logo {
 		display: block;
 		text-align: center;
-		margin-top: 85px;
+		margin-top: 70px;
 		margin-bottom: 3rem;
+
+		@include media-breakpoint-down(mx) {
+			margin-top: 60px;
+		}
 
 		@include media-breakpoint-down(sm) {
 			text-align: right;
@@ -153,24 +151,13 @@
 		.bar-logo__sign {
 			height: auto;
 			margin-right: 1px;
-			width: $mainbar-w-xl - 30;
-
-			@include media-breakpoint-only(lg) {
-				width: $mainbar-w-lg - 30;
-			}
-
-			@include media-breakpoint-only(md) {
-				width: $mainbar-w-md - 20;
-			}
-
-			@include media-breakpoint-only(mx) {
-				width: $mainbar-w-mx - 20;
-			}
+			width: $mainbar-w-xl - 16;
 
 			@include media-breakpoint-down(sm) {
 				height: 30px;
 				width: auto;
 				margin-top: 1px;
+				margin-right: -8px;
 			}
 
 		}
@@ -178,19 +165,7 @@
 		.bar-logo__txt {
 			margin-top: 5px;
 			height: auto;
-			width: $mainbar-w-xl - 34;
-
-			@include media-breakpoint-only(lg) {
-				width: $mainbar-w-lg - 34;
-			}
-
-			@include media-breakpoint-only(mx) {
-				width: $mainbar-w-mx - 24;
-			}
-
-			@include media-breakpoint-only(md) {
-				width: $mainbar-w-md - 24;
-			}
+			width: $mainbar-w-xl - 18;
 
 			@include media-breakpoint-down(sm) {
 				display: none;
@@ -232,7 +207,7 @@
 
 		&__call {
 			background: url("../img/sp-mainico.svg") -2px -1px;
-			margin-bottom: 112px;
+			margin-bottom: 120px;
 			transition: .3s;
 
 			@include media-breakpoint-only(mx) {
@@ -363,7 +338,7 @@
 .nav-main__menu {
 	position: absolute;
 	z-index: 1;
-	left: -100%-80;
+	left: -100%-60;
 	width: 0;
 	height: 0;
 	display: flex;
@@ -527,7 +502,7 @@
 	position: fixed;
 	z-index: 500;
 	left: 0;
-	min-height: 60px;
+	height: 50px;
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
@@ -535,6 +510,10 @@
 	background: transparentize($c-white, 0.3);
 	padding:0 1.5rem 0 8rem;
 	border-bottom: solid 1px transparentize($c-gray-lighter, 0.5);
+
+	@include media-breakpoint-down(mx) {
+		height: 40px;
+	}
 
 	@include media-breakpoint-down(sm) {
 		display: none;
@@ -545,14 +524,14 @@
 		margin: 0;
 
 		> li {
-			height: 60px;
+			height: 50px;
 			font-family: $font-family-hdr;
 			font-size: 1.6rem;
 			font-weight: bold;
 			text-transform: uppercase;
 			margin: 0 1rem;
 			padding: 0;
-			line-height: 60px;
+			line-height: 50px;
 			transition:  all 0.5s;
 
 			@include media-breakpoint-down(mx) {

@@ -37,7 +37,6 @@ BODY {
 
 
 .pagewrap {
-	min-height: 100vh;
 
 	@include media-breakpoint-down(mx) {
 		min-height: auto;
@@ -73,11 +72,26 @@ section {
 	margin-bottom: 0;
 
 	.container {
-		padding-top: 5rem;
+		padding-top: 6rem;
 		padding-bottom: 3rem;
+
+		@include media-breakpoint-down(mx) {
+			padding-top: 9rem;
+			padding-bottom: 6rem;
+		}
+
 	}
 
 }
+
+.section { //секция fullpage.js
+
+	@include media-breakpoint-down(mx) {
+		height: auto !important;
+	}
+
+}
+
 
 .row {
 	position: relative;

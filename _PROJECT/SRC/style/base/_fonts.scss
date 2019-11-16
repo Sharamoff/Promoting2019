@@ -42,8 +42,7 @@
 
 @font-face {
   font-family: 'Exo 2 Extra Light';
-  src: local('Exo 2 Extra Light'), local('Exo2-ExtraLight'),
-  url('../fonts/exo2extralight.woff2') format('woff2'),
+  src: url('../fonts/exo2extralight.woff2') format('woff2'),
   url('../fonts/exo2extralight.woff') format('woff'),
   url('../fonts/exo2extralight.ttf') format('truetype');
   font-weight: 200;
@@ -52,8 +51,7 @@
 
 @font-face {
   font-family: 'Exo 2';
-  src: local('Exo 2'), local('Exo2-Regular'),
-  url('../fonts/exo2.woff2') format('woff2'),
+  src: url('../fonts/exo2.woff2') format('woff2'),
   url('../fonts/exo2.woff') format('woff'),
   url('../fonts/exo2.ttf') format('truetype');
   font-weight: normal;
@@ -62,8 +60,7 @@
 
 @font-face {
   font-family: 'Exo 2';
-  src: local('Exo 2'), local('Exo2-Bold'),
-  url('../fonts/exo2bold.woff2') format('woff2'),
+  src: url('../fonts/exo2bold.woff2') format('woff2'),
   url('../fonts/exo2bold.woff') format('woff'),
   url('../fonts/exo2bold.ttf') format('truetype');
   font-weight: bold;
@@ -72,8 +69,7 @@
 
 @font-face {
   font-family: 'Exo 2 Black';
-  src: local('Exo 2 Black'), local('Exo2-Black'),
-  url('../fonts/exo2black.woff2') format('woff2'),
+  src: url('../fonts/exo2black.woff2') format('woff2'),
   url('../fonts/exo2black.woff') format('woff'),
   url('../fonts/exo2black.ttf') format('truetype');
   font-weight: 900;

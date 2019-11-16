@@ -488,17 +488,6 @@
 			width: 100%;
 			max-width: 250px;
 			height: auto;
-			filter: grayscale(1) brightness(100);
-		}
-
-		&:hover {
-			background: $c-white;
-			box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
-
-			img {
-				filter: none;
-			}
-
 		}
 
 	}
