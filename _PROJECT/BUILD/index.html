@@ -103,7 +103,7 @@
 
 
 
-	<section class="section fp-auto-height-responsivet sc_idx_collage" data-anchor="id_collage">
+	<section class="fp_section fp-auto-height-responsivet sc_idx_collage" data-anchor="id_collage">
 		<div class="container">
 
 			<div class="collage__slogan wow bounceInLeft">
@@ -121,7 +121,7 @@
 
 
 
-	<section class="section fp-auto-height-responsive sc_idx_agency" data-anchor="id_agency">
+	<section class="fp_section fp-auto-height-responsive sc_idx_agency" data-anchor="id_agency">
 		<div class="container">
 
 
@@ -172,7 +172,7 @@
 
 
 
-	<section class="section fp-auto-height-responsive sc_idx_services" data-anchor="id_services">
+	<section class="fp_section fp-auto-height-responsive sc_idx_services" data-anchor="id_services">
 		<div class="container">
 
 
@@ -227,7 +227,7 @@
 
 
 
-	<section class="section fp-auto-height-responsive sc_idx_solutions" data-anchor="id_solutions">
+	<section class="fp_section fp-auto-height-responsive sc_idx_solutions" data-anchor="id_solutions">
 		<div class="container">
 
 
@@ -294,139 +294,83 @@
 
 
 
-	<section class="section fp-auto-height-responsive sc_idx_projects" data-anchor="id_projects">
+	<section class="fp_section fp-auto-height-responsive sc_idx_projects" data-anchor="id_projects">
 		<div class="container">
 
 
 			<p class="mainhdr wow bounceInLeft">Наши проекты</p>
 
 
-			<div class="row idx_projects">
+			<div class="idx_projects carousel slide wow fadeIn" data-wow-delay="1s" data-wow-duration="2s" id="id_idx_projects" data-ride="carousel" data-interval="5000">
 
-				<div class="col-sm-6 col-md-4">
-					<div class="block-project wow fadeInUp" data-wow-delay="1s">
+				<ol class="carousel-indicators">
+					<li data-target="#id_idx_projects" data-slide-to="0" class="active"></li>
+					<li data-target="#id_idx_projects" data-slide-to="1"></li>
+					<li data-target="#id_idx_projects" data-slide-to="2"></li>
+					<li data-target="#id_idx_projects" data-slide-to="3"></li>
+					<li data-target="#id_idx_projects" data-slide-to="4"></li>
+					<li data-target="#id_idx_projects" data-slide-to="5"></li>
+				</ol>
+
+				<div class="carousel-inner">
+
+					<div class="block-project carousel-item active">
 						<div class="project__note" id="id_prj1">
 							<p><a href="https://www.finotchet.ru/" target="_blank">www.finotchet.ru</a></p>
 							<p>Проект издательского дома «Методология» в области международных стандартов финансовой отчетности.</p>
 						</div>
 						<img src="img/portfolio/pfi-finotchet.jpg" alt="Финотчет" rel="prj1" title="кликните, чтобы посмотреть краткое описание проекта">
 					</div>
-				</div>
 
-				<div class="col-sm-6 col-md-4">
-					<div class="block-project wow fadeInUp" data-wow-delay="1.2s">
+					<div class="block-project carousel-item">
 						<div class="project__note" id="id_prj2">
 							<p><a href="https://www.herpesclinic.ru/" target="_blank">www.herpesclinic.ru</a></p>
 							<p>Корпоративный сайт Герпетического центра, специализирующегося на оказании медицинских услуг.</p>
 						</div>
 						<img src="img/portfolio/pfi-herpes.jpg" alt="Герпетический центр" rel="prj2" title="кликните, чтобы посмотреть краткое описание проекта">
 					</div>
-				</div>
 
-				<div class="col-sm-6 col-md-4">
-					<div class="block-project wow fadeInUp" data-wow-delay="1.4s">
+					<div class="block-project carousel-item">
 						<div class="project__note" id="id_prj3" >
 							<p><a href="https://www.shkafy-kupe.ru/" target="_blank">www.shkafy-kupe.ru</a></p>
 							<p>ПКорпоративный сайт «Фабрики деревообработки Алексея Козырева» (AKDOORs), занимающейся производством корпусной мебели.</p>
 						</div>
 						<img src="img/portfolio/pfi-akdoors.jpg" alt="AKDOORs" rel="prj3" title="кликните, чтобы посмотреть краткое описание проекта">
 					</div>
-				</div>
-<!--
-				<div class="col-sm-6 col-md-4">
-					<div class="block-project wow fadeInUp" data-wow-delay="1.1s">
+
+					<div class="block-project carousel-item">
 						<div class="project__note" id="id_prj4" >
 							<p><a href="https://www.pfi-cons.ru/" target="_blank">www.pfi-cons.ru</a></p>
 							<p>Landing Page обучающего курса «Производные финансовые инструменты» для консультационного центра по операциям с деривативами «PFI-CONS».</p>
 						</div>
 						<img src="img/portfolio/pfi-pficons.jpg" alt="PFI-CONS" rel="prj4" title="кликните, чтобы посмотреть краткое описание проекта">
 					</div>
-				</div>
 
-				<div class="col-sm-6 col-md-4">
-					<div class="block-project wow fadeInUp" data-wow-delay="1.3s">
+					<div class="block-project carousel-item">
 						<div class="project__note" id="id_prj5" >
 							<p><a href="https://www.progbi.ru/" target="_blank">www.progbi.ru</a></p>
 							<p>Корпоративный сайт компании, занимающейся производством, продажей и поставками ЖБИ.</p>
 						</div>
 						<img src="img/portfolio/pfi-progbi.jpg" alt="ПроЖБИ" rel="prj5" title="кликните, чтобы посмотреть краткое описание проекта">
 					</div>
-				</div>
 
-				<div class="col-sm-6 col-md-4">
-					<div class="block-project wow fadeInUp" data-wow-delay="1.5s">
+					<div class="block-project carousel-item">
 						<div class="project__note" id="id_prj6" >
 							<p><a href="https://www.tursvodka.ru/" target="_blank">www.tursvodka.ru</a></p>
 							<p>Турсводка.ру — многофункциональный интернет-портал для путешественников, туристических фирм и других компаний, занятых в сфере гостеприимства и туризма.</p>
 						</div>
 						<img src="img/portfolio/pfi-tursvodka.jpg" alt="Турсводка" rel="prj6" title="кликните, чтобы посмотреть краткое описание проекта">
 					</div>
+
 				</div>
 
-				<div class="col-sm-6 col-md-4">
-					<div class="block-project wow fadeInUp" data-wow-delay="1.7s">
-						<div class="project__note" id="id_prj7">
-							<p><a href="https://www.herpesclinic.ru/" target="_blank">www.herpesclinic.ru</a></p>
-							<p>Корпоративный сайт Герпетического центра, специализирующегося на оказании медицинских услуг.</p>
-						</div>
-						<img src="img/portfolio/pfi-herpes.jpg" alt="Герпетический центр" rel="prj7" title="кликните, чтобы посмотреть краткое описание проекта">
-					</div>
-				</div>
+				<a class="carousel-control-prev" href="#id_idx_projects" role="button" data-slide="prev"><i class="fas fa-angle-left"></i></a>
+				<a class="carousel-control-next" href="#id_idx_projects" role="button" data-slide="next"><i class="fas fa-angle-right"></i></a>
 
-				<div class="col-sm-6 col-md-4">
-					<div class="block-project wow fadeInUp" data-wow-delay="1.9s">
-						<div class="project__note" id="id_pr8" >
-							<p><a href="https://www.shkafy-kupe.ru/" target="_blank">www.shkafy-kupe.ru</a></p>
-							<p>ПКорпоративный сайт «Фабрики деревообработки Алексея Козырева» (AKDOORs), занимающейся производством корпусной мебели.</p>
-						</div>
-						<img src="img/portfolio/pfi-akdoors.jpg" alt="AKDOORs" rel="prj8" title="кликните, чтобы посмотреть краткое описание проекта">
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4">
-					<div class="block-project wow fadeInUp" data-wow-delay="2.1s">
-						<div class="project__note" id="id_prj9" >
-							<p><a href="https://www.pfi-cons.ru/" target="_blank">www.pfi-cons.ru</a></p>
-							<p>Landing Page обучающего курса «Производные финансовые инструменты» для консультационного центра по операциям с деривативами «PFI-CONS».</p>
-						</div>
-						<img src="img/portfolio/pfi-pficons.jpg" alt="PFI-CONS" rel="prj9" title="кликните, чтобы посмотреть краткое описание проекта">
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4">
-					<div class="block-project wow fadeInUp" data-wow-delay="2.3s">
-						<div class="project__note" id="id_prj10">
-							<p><a href="https://www.herpesclinic.ru/" target="_blank">www.herpesclinic.ru</a></p>
-							<p>Корпоративный сайт Герпетического центра, специализирующегося на оказании медицинских услуг.</p>
-						</div>
-						<img src="img/portfolio/pfi-herpes.jpg" alt="Герпетический центр" rel="prj10" title="кликните, чтобы посмотреть краткое описание проекта">
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4">
-					<div class="block-project wow fadeInUp" data-wow-delay="2.5s">
-						<div class="project__note" id="id_pr11" >
-							<p><a href="https://www.shkafy-kupe.ru/" target="_blank">www.shkafy-kupe.ru</a></p>
-							<p>ПКорпоративный сайт «Фабрики деревообработки Алексея Козырева» (AKDOORs), занимающейся производством корпусной мебели.</p>
-						</div>
-						<img src="img/portfolio/pfi-akdoors.jpg" alt="AKDOORs" rel="prj11" title="кликните, чтобы посмотреть краткое описание проекта">
-					</div>
-				</div>
-
-				<div class="col-sm-6 col-md-4">
-					<div class="block-project wow fadeInUp" data-wow-delay="2.7s">
-						<div class="project__note" id="id_prj12" >
-							<p><a href="https://www.pfi-cons.ru/" target="_blank">www.pfi-cons.ru</a></p>
-							<p>Landing Page обучающего курса «Производные финансовые инструменты» для консультационного центра по операциям с деривативами «PFI-CONS».</p>
-						</div>
-						<img src="img/portfolio/pfi-pficons.jpg" alt="PFI-CONS" rel="prj12" title="кликните, чтобы посмотреть краткое описание проекта">
-					</div>
-				</div>
--->
 			</div>
 
 
-			<a href="projects.html" class="b-sc-more wow fadeInUp" data-wow-delay="2s">Все проекты<i class="fal fa-long-arrow-alt-right"></i></a>
+			<a href="projects.html" class="b-sc-more wow fadeInUp" data-wow-delay="1s">Все проекты<i class="fal fa-long-arrow-alt-right"></i></a>
 
 
 		</div>
@@ -434,7 +378,7 @@
 
 
 
-	<section class="section fp-auto-height-responsive sc_idx_clients" data-anchor="id_clients">
+	<section class="fp_section fp-auto-height-responsive sc_idx_clients" data-anchor="id_clients">
 		<div class="container">
 
 
@@ -526,7 +470,7 @@
 
 
 
-	<section class="section fp-auto-height-responsive sc_idx_contacts" data-anchor="id_contacts">
+	<section class="fp_section fp-auto-height-responsive sc_idx_contacts" data-anchor="id_contacts">
 		<div class="container">
 
 

@@ -405,20 +405,69 @@
 
 .sc_idx_projects {
 	background-color: $c-white;
+	background-image: url("../img/bk-s4.svg");
+	background-position: 50% 50%;
 	color: $c-gray;
 
 	.idx_projects {
+		margin-bottom: 4rem;
+	}
 
+	.carousel-indicators {
+		bottom: -1rem;
+		height: 0.5rem;
+
+		li {
+			background-color: rgba($c-gblue-dark, 0.6);
+			width: 3rem;
+			height: 3px;
+			margin-right: 0.5rem;
+			margin-left: 0.5rem;
+
+			&:hover {
+				background-color: $c-gblue-dark;
+			}
+
+		}
+
+		.active {
+			background-color: $c-orange-dark;
+		}
+
+	}
+
+	.carousel-control-prev,
+	.carousel-control-next {
+		width: 10%;
+		text-decoration: none;
+
+		i {
+			color: $c-gray-lighter;
+			font-size: 5rem;
+		}
+
+		@include media-breakpoint-only(xs) {
+			display: none;
+		}
+
+	}
+
+	.carousel-control-prev {
+		justify-content: flex-start;
+		margin-left: 0.5rem;
+	}
+
+	.carousel-control-next {
+		justify-content: flex-end;
+		margin-right: 0.5rem;
 	}
 
 	.block-project {
 		position: relative;
-		margin-bottom: 30px;
 		cursor: pointer;
 
 		img {
 			width: 100%;
-			max-width: 360px;
 			border: solid 1px $color-border;
 		}
 
@@ -432,18 +481,22 @@
 	.project__note {
 		display: none;
 		position: absolute;
+		z-index: 49;
 		color: $c-white;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
-		border: solid 1px $c-white;
-		z-index: 2;
+		margin: 1rem;
 		background: transparentize($c-gblue-dark, 0.075);
 		font-size: 1.4rem;
 		padding: 1.5rem;
 		overflow-y: auto;
 		cursor: pointer;
+
+		@include media-breakpoint-only(xs) {
+			margin: 0;
+		}
 
 		a {
 			display: inline-block;
@@ -451,7 +504,7 @@
 			padding: 2px 8px 5px 8px;
 			margin-bottom: 1rem;
 			border-radius: 4px;
-			font: bold$font-size-basemax $font-family-hdr;
+			font: bold $font-size-basemax $font-family-hdr;
 			text-decoration: none;
 		}
 
@@ -463,7 +516,7 @@
 
 .sc_idx_clients {
 	background-color: $c-gblue-dark;
-	background-image: url("../img/bk-s4.jpg");
+	background-image: url("../img/bk-s5.jpg");
 	background-position: left bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -478,18 +531,23 @@
 	}
 
 	.block-client {
-		background: transparentize($c-white, 0.95);
-		border: solid 1px $c-gblue;
-		transition: background-color 1s;
-		margin-bottom: 30px;
 		text-align: center;
 
 		img {
 			width: 100%;
 			max-width: 250px;
 			height: auto;
+
+			@include media-breakpoint-down(mx) {
+				max-width: 200px;
+			}
+
 		}
 
+	}
+
+	.b-sc-more {
+		margin-top: 3rem;
 	}
 
 }
@@ -498,7 +556,7 @@
 
 .sc_idx_contacts {
 	background-color: $c-white;
-	background-image: url("../img/bk-s5.svg");
+	background-image: url("../img/bk-s6.svg");
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	color: $c-gray;

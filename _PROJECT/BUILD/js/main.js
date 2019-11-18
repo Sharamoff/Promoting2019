@@ -6,11 +6,14 @@ $(document).ready(function () {
 
 $('#id_idx_fullpage').fullpage({
 	scrollBar: true, // нужно для wow
-	responsiveWidth: 1025,
+	responsiveWidth: 900,
 	menu: '#id_idx_nav',
 	anchors: ['id_collage', 'id_agency', 'id_services', 'id_solutions', 'id_projects', 'id_clients', 'id_contacts'],
 	navigation: true,
-	navigationTooltips: ['<', 'АГЕНТСТВО','УСЛУГИ','РЕШЕНИЯ', 'ПРОЕКТЫ', 'КЛИЕНТЫ', 'КОНТАКТЫ']
+	navigationTooltips: ['<', 'АГЕНТСТВО','УСЛУГИ','РЕШЕНИЯ', 'ПРОЕКТЫ', 'КЛИЕНТЫ', 'КОНТАКТЫ'],
+	normalScrollElements: '#id_projects',
+	sectionSelector:  '.fp_section',
+	slideSelector:    '.fp_slide'
 });
 
 
@@ -41,13 +44,13 @@ $('.project__note').click( function() {
 });
 var wow = new WOW(
 	{
-		boxClass:     'wow',
-		animateClass: 'animated',
-		offset:       0,
-		mobile:       false,
-		live:         true,
-		callback:     function(box) {},
-		scrollContainer: null
+		boxClass:        'wow',
+		animateClass:    'animated',
+		offset:           0,
+		mobile:           false,
+		live:             true,
+		callback:         function(box) {},
+		scrollContainer:  null
 	}
 );
 wow.init();

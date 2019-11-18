@@ -8,7 +8,9 @@ $('#id_idx_fullpage').fullpage({
 	anchors: ['id_collage', 'id_agency', 'id_services', 'id_solutions', 'id_projects', 'id_clients', 'id_contacts'],
 	navigation: true,
 	navigationTooltips: ['<', 'АГЕНТСТВО','УСЛУГИ','РЕШЕНИЯ', 'ПРОЕКТЫ', 'КЛИЕНТЫ', 'КОНТАКТЫ'],
-	normalScrollElements: '#id_projects'
+	normalScrollElements: '#id_projects',
+	sectionSelector:  '.fp_section',
+	slideSelector:    '.fp_slide'
 });
 
 

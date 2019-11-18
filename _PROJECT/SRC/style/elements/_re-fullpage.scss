@@ -4,8 +4,6 @@
 
 // fullpage.css переназначения
 
-
-
 #fp-nav {
 	z-index: 9999;
 
@@ -48,11 +46,11 @@
 }
 
 #fp-nav.fp-right {
-	right: 5px;
+	right: 0;
 }
 
 #fp-nav.fp-left {
-	left: 5px;
+	left: 0;
 }
 
 #fp-nav ul li a.active span,
