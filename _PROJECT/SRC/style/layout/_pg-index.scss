@@ -17,7 +17,7 @@
 		line-height: $line-height-p;
 		color: $c-white;
 		margin-bottom: 10%;
-		text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+		opacity: 0;
 
 		@include media-breakpoint-only(mx) {
 			font-size: 3rem;
@@ -28,6 +28,10 @@
 		@include media-breakpoint-down(sm) {
 			font-size: 3rem;
 			margin: 0 auto 30% 3rem;
+		}
+
+		&.nopacity {
+			opacity: 1 !important;
 		}
 
 	}

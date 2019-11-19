@@ -12,7 +12,7 @@ $('#id_idx_fullpage').fullpage({
 	sectionSelector:  '.fp_section',
 	slideSelector:    '.fp_slide'
 });
-
+//document.querySelector('#id_projects').onwheel = e => e.stopPropagation();
 
 
 
@@ -27,8 +27,7 @@ $('.nav-main__menutoggler, .nav-main__menu a').on('click', function (event) {
 
 
 
-
-//описание проекта на главной
+// описание проекта на главной
 
 $('.block-project img').click( function() {
 	$('.project__note').fadeOut();
@@ -42,3 +41,6 @@ $('.project__note').click( function() {
 
 
 
+// включение текста 1 fullpage слайда после инициализации
+
+$('.collage__slogan').addClass('nopacity');

@@ -664,7 +664,7 @@ section {
     line-height: 1.42857;
     color: white;
     margin-bottom: 10%;
-    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); }
+    opacity: 0; }
     @media (min-width: 811px) and (max-width: 991.98px) {
       .sc_idx_collage .collage__slogan {
         font-size: 3rem;
@@ -674,6 +674,8 @@ section {
       .sc_idx_collage .collage__slogan {
         font-size: 3rem;
         margin: 0 auto 30% 3rem; } }
+    .sc_idx_collage .collage__slogan.nopacity {
+      opacity: 1 !important; }
   .sc_idx_collage .collage__dwnbtn {
     position: absolute;
     bottom: 0;
