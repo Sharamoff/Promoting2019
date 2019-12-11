@@ -1,0 +1,47 @@
+///////////////////////////////////////////////
+// вы получите
+
+
+.sc_result {
+  background-color: $c-orange-dark;
+  background-image: url("../img/bk-s2.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  color: $c-white;
+
+  @include media-breakpoint-down(lg) {
+    background-size: 70%;
+  }
+
+  @include media-breakpoint-only(mx) {
+    background-size: 50%;
+  }
+
+  @include media-breakpoint-only(sm) {
+    background-size: 50%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    background-size: 100%;
+  }
+
+}
+
+.content-result {
+
+}
+
+.block-result {
+  margin-top: 3rem;
+
+  > li:before {
+    color: $c-orange;
+  }
+
+}
+
+
+
+
+
+

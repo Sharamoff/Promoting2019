@@ -1,0 +1,163 @@
+///////////////////////////////////////////////
+// услуги
+
+
+.sc_services {
+  background-color: $c-orange-dark;
+  background-image: url("../img/bk-s2.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  color: $c-white;
+
+  @include media-breakpoint-down(lg) {
+    background-size: 70%;
+  }
+
+  @include media-breakpoint-only(mx) {
+    background-size: 50%;
+  }
+
+  @include media-breakpoint-only(sm) {
+    background-size: 50%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    background-size: 100%;
+  }
+
+}
+
+.content-services {
+  margin-bottom: 3rem;
+}
+
+.block-service {
+
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+
+    ul {
+      list-style: none;
+      margin-left: -1.5rem;
+    }
+
+  }
+
+  .service__icon {
+    margin-bottom: 2rem;
+
+    img {
+      width: 150px;
+      height: auto;
+
+      @include media-breakpoint-down(mx) {
+        width: 120px;
+      }
+
+    }
+
+  }
+
+  .service__txt {
+    color: $c-white;
+    font-size: $font-size-basemax;
+
+    @include media-breakpoint-down(mx) {
+      font-size: $font-size-basemin;
+    }
+
+    .hdr {
+      min-height: 6rem;
+      font-family: $font-family-hdr;
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: $line-height-hdr;
+      color: $c-orange-light;
+      text-transform: uppercase;
+
+      @include media-breakpoint-down(mx) {
+        font-size: 1.8rem;
+        min-height: 4rem;
+      }
+
+      @include media-breakpoint-down(xs) {
+        min-height: auto;
+      }
+
+      a {
+        color: $c-orange-light;
+        text-decoration: none;
+
+        &:hover {
+          color: $c-orange-lighter;
+          //text-decoration: underline;
+        }
+
+      }
+
+    }
+
+    ul {
+      padding: 0 0 1.5rem 2.2rem;
+
+      @include media-breakpoint-down(mx) {
+        padding: 0 0 1.5rem 1.8rem;
+      }
+
+      li {
+        margin: 1.5rem auto;
+
+        @include media-breakpoint-down(mx) {
+          margin: 0.7rem auto;
+        }
+
+        a {
+          color: $c-white;
+          text-decoration: underline;
+
+          &:hover {
+            color: $c-orange-lighter;
+            text-decoration: none;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+///////////////////////////////////////////////
+// Несколько фактов о нас
+
+
+.sc_factus {
+  background-color: $c-gray-lightermore;
+  color: $c-black;
+}
+
+.content-factus {
+
+}
+
+.block-factus {
+  margin: 3rem 3rem 3rem 0;
+
+  @include media-breakpoint-only(xs) {
+    text-align: center;
+    margin: 1.5rem;
+  }
+
+  p {
+    margin: 0;
+    line-height: $line-height-def;
+    font-size: $font-size-base;
+    font-weight: bold;
+  }
+
+  .factus__val {
+    font-family: $font-family-hdr;
+    margin-top: -0.8rem;
+    line-height: 1;
+
+    .spin-numb {
+      font-size: 8rem;
+      color: $c-orange-dark;
+    }
+
+    .factus__sup {
+      font-size: 4rem;
+      position: relative;
+
+      @include media-breakpoint-down(mx) {
+        font-size: 3rem;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

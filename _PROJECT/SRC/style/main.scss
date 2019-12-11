@@ -19,7 +19,6 @@
 @import 'layout/nav';
 @import 'layout/footer';
 @import 'layout/modal';
-@import 'layout/pg-index';
 
 @import 'elements/re-fullpage';
 @import 'elements/headers';
@@ -30,16 +29,17 @@
 @import 'elements/lists';
 @import 'elements/tables';
 
-@import 'blocks/news';
-
-
-
-
-
-
-
-
-
-
-
-
+@import 'sections/collage';
+@import 'sections/agency';
+@import 'sections/services';
+@import 'sections/solutions';
+@import 'sections/projects';
+@import 'sections/clients';
+@import 'sections/contacts';
+@import 'sections/dev';
+@import 'sections/factus';
+@import 'sections/stages';
+@import 'sections/result';
+@import 'sections/tasks';
+@import 'sections/plusminus';
+@import 'sections/faq';

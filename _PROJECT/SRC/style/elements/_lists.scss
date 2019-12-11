@@ -52,28 +52,152 @@ UL.ul--links {
 
 }
 
+UL.ul--check {
+
+	> li {
+		list-style: none;
+		margin: 1.5rem;
+
+		&:before {
+			font-family: $fontawesome;
+			content: '\f00c';
+			margin-right: 1.5rem;
+			margin-left: -3rem;
+		}
+
+	}
+
+}
+
+UL.ul--check_lg {
+	font-size: $font-size-basemax;
+
+	> li {
+		list-style: none;
+		margin: 1rem 0 1rem 0.5rem;
+
+		&:before {
+			font-family: $fontawesome;
+			font-size: 3rem;
+			font-weight: lighter;
+			content: '\f14a';
+			position: relative;
+			top: 0.5rem;
+			margin-right: 1.5rem;
+			margin-left: -4.2rem;
+		}
+
+	}
+
+}
+
+UL.ul--plus_lg {
+	font-size: $font-size-basemax;
+
+	> li {
+		list-style: none;
+		margin: 1rem 0 1rem 0.5rem;
+
+		&:before {
+			font-family: $fontawesome;
+			font-size: 3rem;
+			content: '\f055';
+			position: relative;
+			top: 0.5rem;
+			margin-right: 1.5rem;
+			margin-left: -4.2rem;
+			color: $c-gblue;
+		}
+
+	}
+
+}
+
+UL.ul--minus_lg {
+	font-size: $font-size-basemax;
+
+	> li {
+		list-style: none;
+		margin: 1rem 0 1rem 0.5rem;
+
+		&:before {
+			font-family: $fontawesome;
+			font-size: 3rem;
+			content: '\f056';
+			position: relative;
+			top: 0.5rem;
+			margin-right: 1.5rem;
+			margin-left: -4.2rem;
+			color: $c-orange-dark;
+		}
+
+	}
+
+}
+
+OL {
+	margin-bottom: 1.5rem;
+	padding-left: 1.8rem;
+
+	> LI {
+		margin: 1rem 0;
+	}
+
+}
+
 OL.ol--cont {
 	counter-reset: li;
 	list-style: none;
 
 	> li {
-		margin: 1.5rem 0 1.5rem -1.5rem;
+		margin: 1.5rem 0 1.5rem 2rem;
 		position: relative;
 		display: block;
+
 		&:before {
 			content: counter(li);
 			counter-increment: li;
 			position: absolute;
-			left: -2.5rem;
-			top: -0.3rem;
+			left: -4rem;
+			top: -0.6rem;
 			background: #fff;
-			height: 2.1rem;
-			width: 2.1rem;
+			height: 3rem;
+			width: 3rem;
 			text-align: center;
-			font: $font-size-base $font-family-base;
-			line-height: 1.4;
-			color: $c-gray-light;
-			border: solid 1px $c-gray-light;
+			font: bold $font-size-basemax $font-family-hdr;
+			line-height: 1.3;
+			color: $c-gray-lighter;
+			border: solid 2px $c-gray-lighter;
+			border-radius: 50%;
+		}
+	}
+
+}
+
+OL.ol--cont_lg {
+	counter-reset: li;
+	list-style: none;
+
+	> li {
+		margin: 3rem 0 3rem 0.5rem;
+		position: relative;
+		display: block;
+		font-size: $font-size-basemax;
+
+		&:before {
+			content: counter(li);
+			counter-increment: li;
+			position: absolute;
+			left: -4.5rem;
+			top: -0.7rem;
+			background: #fff;
+			height: 3.4rem;
+			width: 3.4rem;
+			text-align: center;
+			font: bold 2.3rem $font-family-hdr;
+			line-height: 1.2;
+			color: $c-orange-light;
+			border: solid 2px $c-orange-lighter;
 			border-radius: 50%;
 		}
 	}

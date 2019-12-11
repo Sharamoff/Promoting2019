@@ -1,0 +1,99 @@
+///////////////////////////////////////////////
+// этапы
+
+
+.sc_stages {
+  background-color: $c-white;
+  color: $c-gray;
+}
+
+.content-stages {
+  margin-top: 9rem;
+
+  @include media-breakpoint-down(mx) {
+    margin-top: auto;
+  }
+
+}
+
+.block-stage {
+  position: relative;
+  margin-bottom: 10rem;
+
+  &:nth-child(2n) {
+    margin-left: 20%;
+  }
+
+  &:nth-child(2n+1) {
+    margin-right: 20%;
+  }
+
+  @include media-breakpoint-down(mx) {
+    margin: 0 0 3rem 0 !important;
+  }
+
+  .stage__num {
+    position: absolute;
+    font: 20rem $font-family-hdr-bold;
+    color: $c-gray-lightermore;
+    z-index: 0;
+    top: -6rem;
+
+    @include media-breakpoint-down(mx) {
+      font-size: 10rem;
+      top: -2.5rem;
+    }
+
+  }
+
+  p {
+    position: relative;
+    z-index: 1;
+    margin-left: 15rem;
+
+    @include media-breakpoint-down(mx) {
+      margin-left: 8rem;
+    }
+
+  }
+
+  .hdr {
+    color: $c-orange-dark;
+    font: bold $font-size-h2 $font-family-hdr;
+    line-height: $line-height-hdr;
+    text-transform: uppercase;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

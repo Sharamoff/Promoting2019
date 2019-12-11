@@ -16,25 +16,33 @@ wow.init();
 
 
 
-// анимация cifr на главной
-$('#id_agency_cifr1').spincrement({duration: 6000});
-$('#id_agency_cifr2').spincrement({duration: 4000});
-$('#id_agency_cifr3').spincrement({duration: 4000});
+// анимация cifr
+$('.spin-numb').spincrement({duration: 6000});
 
-// одностраничная секция главной
+// одностраничные секции
 
+//index
 $('#id_idx_fullpage').fullpage({
 	scrollBar: true, // нужно для wow
 	responsiveWidth: 900,
 	menu: '#id_idx_nav',
-	anchors: ['id_collage', 'id_agency', 'id_services', 'id_solutions', 'id_projects', 'id_clients', 'id_contacts'],
 	navigation: true,
-	navigationTooltips: ['<', 'АГЕНТСТВО','УСЛУГИ','РЕШЕНИЯ', 'ПРОЕКТЫ', 'КЛИЕНТЫ', 'КОНТАКТЫ'],
-	normalScrollElements: '#id_projects',
+	navigationTooltips: ['<', 'АГЕНТСТВО','УСЛУГИ', 'ОТРАСЛЕВЫЕ РЕШЕНИЯ', 'ПРОЕКТЫ', 'КЛИЕНТЫ', 'КОНТАКТЫ'],
 	sectionSelector:  '.fp_section',
 	slideSelector:    '.fp_slide'
 });
-//document.querySelector('#id_projects').onwheel = e => e.stopPropagation();
+
+//services
+$('#id_srv_fullpage').fullpage({
+	scrollBar: true, // нужно для wow
+	responsiveWidth: 900,
+	menu: '#id_srv_nav',
+	navigation: true,
+	navigationTooltips: ['РАЗРАБОТКА САЙТОВ', 'РЕЗУЛЬТАТ', 'РЕШАЕМЫЕ ЗАДАЧИ', 'ПРЕИМУЩЕСТВА/НЕДОСТАТКИ', 'ФАКТЫ О НАС', 'ЭТАПЫ РАЗРАБОТКИ', 'ВОПРОСЫ И ОТВЕТЫ', 'ОТРАСЛЕВЫЕ РЕШЕНИЯ', 'КЛИЕНТЫ', 'КОНТАКТЫ'],
+	normalScrollElements: '.sc_stages, .sc_faq ',
+	sectionSelector:  '.fp_section',
+	slideSelector:    '.fp_slide'
+});
 
 
 

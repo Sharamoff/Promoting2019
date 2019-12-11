@@ -1,0 +1,105 @@
+///////////////////////////////////////////////
+// разработка
+
+
+.sc_dev {
+  background-color: $c-white;
+  background-image: url("../img/bk-s1.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  color: $c-gray;
+
+  @include media-breakpoint-down(lg) {
+    background-size: 70%;
+  }
+
+  @include media-breakpoint-only(mx) {
+    background-size: 50%;
+  }
+
+  @include media-breakpoint-only(sm) {
+    background-size: 50%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    background-size: 100%;
+  }
+
+}
+
+.content-dev__text {
+  margin-bottom: 6rem;
+
+  @include media-breakpoint-down(mx) {
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+.content-dev__typesite {
+
+}
+
+.block-typesite {
+  margin-top: 3rem;
+  font-family: $font-family-hdr;
+  font-weight: bold;
+  font-size: $font-size-hdr;
+  text-transform: uppercase;
+  color: $c-black;
+  line-height: 1;
+  text-align: left;
+
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: $c-orange-dark;
+    transition: 1s;
+
+    &:hover {
+      color: $c-black;
+    }
+
+  }
+
+  img {
+    width: 10rem;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

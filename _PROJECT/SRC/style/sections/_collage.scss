@@ -1,0 +1,96 @@
+///////////////////////////////////////////////
+// коллажи
+
+
+.sc_collage {
+  height: 100vh;
+  background-color: $c-gblue-dark;
+  background-image: url("../img/cl1.jpg");
+  background-position: left 50%;
+  background-size: cover;
+  padding-bottom: 0;
+}
+
+.collage__slogan {
+  font-family: $font-family-hdr-bold;
+  font-size: 7rem;
+  line-height: $line-height-p;
+  color: $c-white;
+  margin-bottom: 10%;
+  opacity: 0;
+
+  @include media-breakpoint-only(mx) {
+    font-size: 3rem;
+    margin-top: -3rem;
+    margin-bottom: 4rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 3rem;
+    margin: 0 auto 30% 3rem;
+  }
+
+}
+
+.collage__dwnbtn {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 140px;
+  background: url("../img/bkdot-r.svg") top center repeat-y;
+
+  @include media-breakpoint-only(mx) {
+    height: 80px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 80px;
+  }
+
+  @include media-breakpoint-only(xs) {
+    left: 50%;
+    margin-left: -25px;
+  }
+
+  .dwnbtn {
+    display: block;
+    background: $c-orange-dark url("../img/i-down.svg") 50% 50% no-repeat;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

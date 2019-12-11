@@ -1,0 +1,68 @@
+///////////////////////////////////////////////
+// клиенты
+
+
+.sc_clients {
+  background-color: $c-gblue-dark;
+  background-image: url("../img/bk-s5.jpg");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $c-white;
+
+  .mainhdr {
+    color: $c-white;
+  }
+
+  .b-sc-more {
+    margin-top: 3rem;
+  }
+
+}
+
+.content-clients {
+
+}
+
+.block-client {
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+
+    @include media-breakpoint-down(mx) {
+      max-width: 200px;
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

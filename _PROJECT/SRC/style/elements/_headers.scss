@@ -21,12 +21,12 @@ H1 {
 	font-weight: normal;
 	color: $color-h;
 	margin-top: 0;
-	margin-bottom: 6rem;
+	margin-bottom: 5rem;
 	line-height: $line-height-min;
 	text-transform: uppercase;
 
 	@include media-breakpoint-down(mx) {
-		margin-bottom: 4rem;
+		margin-bottom: 3rem;
 		font-size: 3rem;
 	}
 
@@ -37,13 +37,17 @@ H1 {
 }
 
 H2 {
-	font-family: $font-family-base;
+	font-family: $font-family-hdr;
 	font-size: $font-size-h2;
 	font-weight: bold;
 	line-height: $line-height-min;
 	margin-top: 3rem;
 	margin-bottom: 1.5rem;
-	color: $color-hdr;
+	color: $color-h;
+
+	@include media-breakpoint-only(xs) {
+		text-align: center;
+	}
 
 	sup {
 		font-size: $font-size-base;

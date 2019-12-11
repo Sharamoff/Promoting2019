@@ -1,0 +1,165 @@
+///////////////////////////////////////////////
+// контакты
+
+
+.sc_contacts {
+  background-color: $c-white;
+  background-image: url("../img/bk-s6.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  color: $c-gray;
+
+  @include media-breakpoint-down(lg) {
+    background-size: 70%;
+  }
+
+  @include media-breakpoint-only(mx) {
+    background-size: 50%;
+  }
+
+  @include media-breakpoint-only(sm) {
+    background-size: 50%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    background-size: 100%;
+  }
+
+}
+
+.content-contacts {
+
+}
+
+.block-contact {
+
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+  }
+
+  p {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: $font-size-basemax;
+
+    @include media-breakpoint-down(mx) {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: $font-size-base;
+    }
+
+  }
+
+  .hdr {
+    font: bold 2.5rem $font-family-hdr;
+    color: $c-orange-dark;
+    text-transform: uppercase;
+  }
+
+  .addr {
+    font-size: $font-size-base;
+
+    a {
+      text-decoration: none;
+      border-bottom: dashed 1px $color-link;
+
+      &:hover {
+        border-color: transparent;
+      }
+
+    }
+
+    i {
+      margin-right: 1rem;
+    }
+
+  }
+
+}
+
+.contact__form {
+  border-left: solid 1px $c-gray-lighter;
+  padding: 3.5rem 3rem 3rem 6rem;
+
+  @include media-breakpoint-down(lg) {
+    padding: 3.5rem 1.5rem 3rem 3rem;
+  }
+
+  @include media-breakpoint-down(mx) {
+    border: none;
+    padding: 3.5rem 1.5rem 3rem 1.5rem;
+  }
+
+}
+
+.content-promoting {
+
+}
+
+.block-promoting {
+  margin-top: -10rem;
+  font-size:  14px;
+
+  @include media-breakpoint-down(mx) {
+    margin-top: 3rem;
+  }
+
+  @include media-breakpoint-down(xs) {
+    font-size:  12px;
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  P {
+    line-height: 1.1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  img {
+    float: left;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: dotted 1px $c-gray;
+
+    @include media-breakpoint-down(xs) {
+      float: none;
+      display: block;
+      padding: 0;
+      margin: 1.5rem auto;
+      border: none;
+    }
+
+  }
+
+  p {
+    line-height: 1.1;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

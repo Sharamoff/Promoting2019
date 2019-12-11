@@ -1,0 +1,119 @@
+///////////////////////////////////////////////
+// агентство
+
+
+.sc_agency {
+  background-color: $c-white;
+  background-image: url("../img/bk-s1.svg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  color: $c-gray;
+
+  @include media-breakpoint-down(lg) {
+    background-size: 70%;
+  }
+
+  @include media-breakpoint-only(mx) {
+    background-size: 50%;
+  }
+
+  @include media-breakpoint-only(sm) {
+    background-size: 50%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    background-size: 100%;
+  }
+
+}
+
+.content-agency__text {
+  margin-bottom: 6rem;
+
+  @include media-breakpoint-down(mx) {
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+.content-agency__cifr {
+
+}
+
+.block-cifr {
+  margin-bottom: 3rem;
+
+  @include media-breakpoint-only(xs) {
+    text-align: center;
+  }
+
+  .cifr__val {
+    font-family: $font-family-hdr;
+    font-weight: bold;
+    font-size: 10rem;
+    color: $c-black;
+    line-height: 1;
+
+    @include media-breakpoint-down(mx) {
+      font-size: 6rem;
+    }
+
+    .spin-numb {
+      color: $c-orange-dark;
+    }
+
+    .cifr__sup {
+      font-size: 5rem;
+      position: relative;
+      top: -4.5rem;
+      left: 1rem;
+
+      @include media-breakpoint-down(mx) {
+        font-size: 3rem;
+        top: -2.5rem;
+      }
+
+    }
+
+  }
+
+  .cifr__prop {
+    font-size: $font-size-basemax;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: $c-black;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

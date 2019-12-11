@@ -1,17 +1,16 @@
 // media
 
-$m-min:								290px;
-$m-max:								1140px;
+$m-min:						      290px;
+$m-max:						      1140px;
+$content-max:			  	  1140px;
 
-$content-max:					1140px;
+$blockpic-max:			  	290px;
 
-$blockpic-max:				290px;
-
-$mainbar-w-xl:				60px;
-$mainbar-w-lg:				60px;
-$mainbar-w-mx:				60px;
-$mainbar-w-md:				60px;
-$mainbar-w-sm:				60px;
+$mainbar-w-xl:				  60px;
+$mainbar-w-lg:				  60px;
+$mainbar-w-mx:				  60px;
+$mainbar-w-md:				  60px;
+$mainbar-w-sm:				  60px;
 
 
 // colors
@@ -19,42 +18,42 @@ $mainbar-w-sm:				60px;
 $c-white:               rgb(255, 255, 255);
 $c-black:               rgb(0, 0, 0);
 
-$c-gray-lightermore:		#eeeeee;
-$c-gray-lighter:				#cccccc;
-$c-gray-light:					#999999;
-$c-gray:								#666666;
-$c-gray-dark:						#333333;
-$c-blue: 								#008aea;
-$c-gblue-light:					#8ba3b3;
-$c-gblue:								#64849a;
-$c-gblue-dark:					#213c53;
-$c-orange-lightermore:	#f0ded0;
-$c-orange-lighter:			#fac090;
-$c-orange-light:				#f69341;
-$c-orange:							#f58020;
-$c-orange-dark:					#d13927;
+$c-gray-lightermore:	  #eeeeee;
+$c-gray-lighter:		    #cccccc;
+$c-gray-light:			    #999999;
+$c-gray:				        #666666;
+$c-gray-dark:			      #333333;
+$c-blue: 				        #008aea;
+$c-gblue-light:			    #8ba3b3;
+$c-gblue:				        #64849a;
+$c-gblue-dark:			    #213c53;
+$c-orange-lightermore:  #f0ded0;
+$c-orange-lighter:		  #fac090;
+$c-orange-light:			  #f69341;
+$c-orange:					    #f58020;
+$c-orange-dark:				  #d13927;
 
 $color-bk-body:         $c-white;
 
 $color-text:            $c-gray-dark;
-$color-fields:					$c-gray;
+$color-fields:				  $c-gray;
 $color-link:            $c-blue;
 $color-link-hover:      $c-orange-dark;
 $color-h:      			  	$c-black;
 $color-hdr:      			  $c-gblue;
-$color-note:						$c-gblue;
+$color-note:				    $c-gblue;
 $color-placeholder:     $c-gray-light;
-$color-border:					$c-gray-lightermore;
+$color-border:				  $c-gray-lightermore;
 $color-border-hover:		$c-gray-light;
 
 
 
 // fonts
 
-$fontawesome:						'Font Awesome 5 Pro';
+$fontawesome:				    'Font Awesome 5 Pro';
 $font-family-base:      OpenSans, Arial, Helvetica, sans-serif;
 $font-family-hdr-light:	'Exo 2 Extra Light', Arial, Helvetica, sans-serif;
-$font-family-hdr:				'Exo 2', Arial, Helvetica, sans-serif;
+$font-family-hdr:			  'Exo 2', Arial, Helvetica, sans-serif;
 $font-family-hdr-bold:	'Exo 2 Black', Arial, Helvetica, sans-serif;
 $f-size-base-xl:        10px;
 $f-size-base-lg:        10px;
@@ -66,19 +65,17 @@ $f-size-base-xs:        10px;
 $font-size-base:        1.6rem;
 $font-size-basemin:     1.4rem;
 $font-size-basemax:     1.8rem;
-$font-size-text:				$font-size-base;
-$font-size-note:				$font-size-basemin;
-$font-size-h1:          5rem;
-$font-size-h2:          2.5rem;
+$font-size-text:			  $font-size-base;
+$font-size-note:			  $font-size-basemin;
+$font-size-h1:          4rem;
+$font-size-h2:          3rem;
 $font-size-h3:          1.6rem;
 $font-size-hdr:         1.8rem;
-$font-size-fixsm:				12px;
+$font-size-fixsm:			  12px;
 
 $line-height-p:   	    1.428571429;
 $line-height-def:       1.2;
-$line-height-min:       1.1;
-$line-height-hdr:				1.12;
-
-
+$line-height-min:       1.12;
+$line-height-hdr:       1.12;
 
 $border-radius:					4px;

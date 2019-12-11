@@ -13,7 +13,5 @@ wow.init();
 
 
 
-// анимация cifr на главной
-$('#id_agency_cifr1').spincrement({duration: 6000});
-$('#id_agency_cifr2').spincrement({duration: 4000});
-$('#id_agency_cifr3').spincrement({duration: 4000});
+// анимация cifr
+$('.spin-numb').spincrement({duration: 6000});

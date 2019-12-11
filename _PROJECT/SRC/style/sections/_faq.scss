@@ -1,0 +1,78 @@
+///////////////////////////////////////////////
+// вопросы и ответы
+
+
+.sc_faq {
+  background-color: transparentize($c-orange-lighter, 0.75);
+}
+
+.content-faq {
+
+}
+
+.block-faq {
+  position: relative;
+  padding: 1.5rem 1.5rem 1rem 8rem;
+  background: $c-white;
+  border-radius: 1rem;
+  margin: 3rem auto;
+
+  .faq__sign {
+    position: absolute;
+    z-index: 1;
+    top: -1.5rem;
+    left: -1rem;
+    color: $c-orange-lighter;
+    font-size: 8rem;
+  }
+
+  .faq__qwest {
+    position: relative;
+    z-index: 2;
+    font: bold 2.1rem $font-family-hdr;
+    color: $c-orange-dark;
+    line-height: $line-height-min;
+  }
+
+  .faq__answ {
+    position: relative;
+    z-index: 2;
+
+    li {
+      line-height: $line-height-p;
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
