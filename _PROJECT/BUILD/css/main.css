@@ -1311,7 +1311,7 @@ OL.ol--cont_lg {
   counter-reset: li;
   list-style: none; }
   OL.ol--cont_lg > li {
-    margin: 3rem 0 3rem 0.5rem;
+    margin: 3rem 0 3rem 2.5rem;
     position: relative;
     display: block;
     font-size: 1.8rem; }
@@ -1753,6 +1753,56 @@ OL.ol--cont_lg {
     margin-left: -8rem;
     border: solid 5px white; }
 
+.sc_solutionsico {
+  background-color: #eeeeee;
+  background-image: url("../img/bk-s3.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  color: #666666; }
+  @media (max-width: 1199.98px) {
+    .sc_solutionsico {
+      background-size: 70%; } }
+  @media (min-width: 811px) and (max-width: 991.98px) {
+    .sc_solutionsico {
+      background-size: 50%; } }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .sc_solutionsico {
+      background-size: 50%; } }
+  @media (max-width: 575.98px) {
+    .sc_solutionsico {
+      background-size: 100%; } }
+
+.content-solutionsico > [class*="col-"] {
+  margin-bottom: 30px; }
+  @media (max-width: 575.98px) {
+    .content-solutionsico > [class*="col-"] {
+      margin-bottom: 15px; } }
+
+@media (max-width: 575.98px) {
+  .block-solutionico {
+    text-align: center; } }
+
+.block-solutionico a {
+  text-decoration: none; }
+  .block-solutionico a:hover .hdr {
+    color: black; }
+
+.block-solutionico img {
+  height: 100px;
+  width: auto; }
+
+.block-solutionico .hdr {
+  font: bold 2.1rem "Exo 2", Arial, Helvetica, sans-serif;
+  color: #d13927;
+  text-transform: uppercase;
+  line-height: 1.12;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.block-solutionico .tags {
+  font-size: 12px;
+  line-height: 1.12; }
+
 .sc_projects {
   background-color: white;
   background-image: url("../img/bk-s4.svg");
@@ -2063,7 +2113,7 @@ OL.ol--cont_lg {
         margin-left: 8rem; } }
   .block-stage .hdr {
     color: #d13927;
-    font: bold 3rem "Exo 2", Arial, Helvetica, sans-serif;
+    font: bold 2.5rem "Exo 2", Arial, Helvetica, sans-serif;
     line-height: 1.12;
     text-transform: uppercase; }
 
@@ -2098,11 +2148,18 @@ OL.ol--cont_lg {
   color: #f58020; }
 
 .sc_plusminus {
-  background-color: #cccccc;
+  background: #cccccc url("../img/bk-half.png") top center repeat-y;
   color: black; }
+  @media (max-width: 767.98px) {
+    .sc_plusminus {
+      background: #cccccc; } }
 
 .block-plusminus {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  margin-right: 3rem; }
+  @media (max-width: 575.98px) {
+    .block-plusminus {
+      margin-right: 0; } }
 
 .sc_faq {
   background-color: rgba(250, 192, 144, 0.25); }

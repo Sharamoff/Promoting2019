@@ -1,0 +1,111 @@
+///////////////////////////////////////////////
+// решения 2 вариант
+
+
+.sc_solutionsico {
+  background-color: $c-gray-lightermore;
+  background-image: url("../img/bk-s3.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  color: $c-gray;
+
+  @include media-breakpoint-down(lg) {
+    background-size: 70%;
+  }
+
+  @include media-breakpoint-only(mx) {
+    background-size: 50%;
+  }
+
+  @include media-breakpoint-only(sm) {
+    background-size: 50%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    background-size: 100%;
+  }
+
+}
+
+.content-solutionsico {
+
+  > [class*="col-"] {
+
+    margin-bottom: 30px;
+
+    @include media-breakpoint-only(xs) {
+      margin-bottom: 15px;
+    }
+
+  }
+
+}
+
+.block-solutionico {
+
+  @include media-breakpoint-down(xs) {
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+
+      .hdr {color: $c-black;}
+
+    }
+
+  }
+
+  img {
+    height: 100px;
+    width: auto;
+  }
+
+  .hdr {
+    font: bold 2.1rem $font-family-hdr;
+    color: $c-orange-dark;
+    text-transform: uppercase;
+    line-height: $line-height-min;
+    transition: 1s;
+  }
+
+  .tags {
+    font-size: $font-size-fixsm;
+    line-height: $line-height-min;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

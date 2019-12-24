@@ -3,8 +3,13 @@
 
 
 .sc_plusminus {
-  background-color: $c-gray-lighter;
+  background: $c-gray-lighter url("../img/bk-half.png") top center repeat-y;
   color: $c-black;
+
+  @include media-breakpoint-down(sm) {
+    background: $c-gray-lighter;
+  }
+
 }
 
 .content-plusminus {
@@ -13,6 +18,12 @@
 
 .block-plusminus {
   margin-bottom: 3rem;
+  margin-right: 3rem;
+
+  @include media-breakpoint-down(xs) {
+    margin-right: 0;
+  }
+
 }
 
 
