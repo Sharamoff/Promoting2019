@@ -748,6 +748,27 @@ H3 {
 H1 A, H2 A, .mainhead A {
   text-decoration: none; }
 
+.hdr_portfoliolist {
+  height: 40rem;
+  background-color: #213c53;
+  background-image: url("../img/bkh-portfolio.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  padding-bottom: 0;
+  margin-bottom: 1.5rem; }
+  @media (max-width: 991.98px) {
+    .hdr_portfoliolist {
+      height: 35rem; } }
+  @media (max-width: 767.98px) {
+    .hdr_portfoliolist {
+      height: 20rem; } }
+  .hdr_portfoliolist .mainhdr {
+    margin-top: 19rem;
+    color: white; }
+    @media (max-width: 767.98px) {
+      .hdr_portfoliolist .mainhdr {
+        margin-top: 7rem; } }
+
 P {
   line-height: 1.42857;
   margin-top: 1rem;
@@ -2188,3 +2209,24 @@ OL.ol--cont_lg {
     z-index: 2; }
     .block-faq .faq__answ li {
       line-height: 1.42857; }
+
+.sc_portfoliolist {
+  padding: 0 !important; }
+
+.block-portfoliolist {
+  margin-bottom: 1px;
+  background-position: 50% 50%;
+  background-size: cover;
+  text-align: center; }
+  .block-portfoliolist .container {
+    padding: 4rem 0 4rem 6rem; }
+    @media (max-width: 767.98px) {
+      .block-portfoliolist .container {
+        padding: 3rem 0 3rem 0; } }
+    @media (max-width: 575.98px) {
+      .block-portfoliolist .container {
+        padding: 0; } }
+  .block-portfoliolist img {
+    width: 100%;
+    height: auto;
+    border: solid 1px white; }

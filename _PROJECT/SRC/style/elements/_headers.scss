@@ -68,7 +68,36 @@ H1 A, H2 A, .mainhead A {text-decoration:none;}
 
 
 
+// заголовки в секциях
 
+.hdr_portfoliolist {
+	height: 40rem;
+	background-color: $c-gblue-dark;
+	background-image: url("../img/bkh-portfolio.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	padding-bottom: 0;
+	margin-bottom: 1.5rem;
+
+	@include media-breakpoint-down(mx) {
+		height: 35rem;
+	}
+
+	@include media-breakpoint-down(sm) {
+		height: 20rem;
+	}
+
+	.mainhdr {
+		margin-top: 19rem;
+		color: $c-white;
+
+		@include media-breakpoint-down(sm) {
+			margin-top: 7rem;
+		}
+
+	}
+
+}
 
 
 
