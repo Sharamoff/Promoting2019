@@ -755,7 +755,7 @@ H1 A, H2 A, .mainhead A {
   background-position: 50% 50%;
   background-size: cover;
   padding-bottom: 0;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1px; }
   @media (max-width: 991.98px) {
     .hdr_portfoliolist {
       height: 35rem; } }
