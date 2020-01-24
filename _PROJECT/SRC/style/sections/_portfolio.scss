@@ -1,0 +1,183 @@
+///////////////////////////////////////////////
+// портфолио единица
+
+
+.sc_portfolio {
+  background-position: top 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.content-portfolio {
+  margin-bottom: 3rem;
+}
+
+.portfolio__mainhdr {
+  height: 32px;
+  max-width: 542px;
+  background: url("../img/sp-webhdr.png") left no-repeat;
+  padding-left: 125px;
+  border-radius: 5px 5px 0 0;
+
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 32px;
+    color: $c-gray;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+
+  }
+
+}
+
+.portfolio__mainpic {
+  max-width: 542px;
+  border: solid 1px $border-color;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+.portfolio__mainsubs {
+  margin-bottom: 3rem;
+
+  .mainsubs_logo {
+    margin-bottom: 1.5rem;
+
+    @include media-breakpoint-down(xs) {
+      text-align: center;
+
+    }
+
+    img {
+      max-width: 280px;
+    }
+
+  }
+
+  .mainsubs_link {
+    margin-bottom: 3rem;
+
+    @include media-breakpoint-down(xs) {
+      text-align: center;
+    }
+
+    a {
+      font-size: $font-size-basemax;
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: dashed 1px $color-link;
+
+      &:hover {
+        border-color: transparent;
+      }
+
+    }
+
+  }
+
+}
+
+.profolio__ulsubs {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  .ulsub-block {
+    margin-top: 3rem;
+    font-size: $font-size-basemin;
+
+    .hdr {
+      font-size: $font-size-base;
+      display: inline-block;
+      font-family: $font-family-hdr;
+      line-height: 1;
+      background: $c-gblue-light;
+      color: $c-white;
+      padding: 0.1rem 0.8rem 0.4rem 0.8rem;
+      border-radius: 3px;
+      margin-bottom: 1rem;
+    }
+
+  }
+
+  ul {
+    margin: -0.5rem 0 0 0;
+
+    > li {
+      list-style: none;
+      margin: 0.8rem 0 0.8rem -1.5rem;
+
+      &:before {
+        font-family: $fontawesome;
+        font-weight: bold;
+        color: $c-gblue-light;
+        content: '\f14a';
+        position: relative;
+        margin-right: 1rem;
+        margin-left: -2.3rem;
+      }
+
+    }
+
+  }
+
+  i {
+    color: $c-gray;
+  }
+
+}
+
+
+
+.content-portfoliopics {
+
+  .portfoliopics__block {
+    height: 30rem;
+    overflow: hidden;
+    border: solid 2px $c-gray-lightermore;
+    margin-bottom: 3rem;
+    transition: border-color 1s;
+
+    &:hover {
+      border-color: $c-gblue-light;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+}
+
+
+
+.content-portfolioadapt {
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 980px;
+    height: auto;
+  }
+
+}
+
+
+
+
+
+
+

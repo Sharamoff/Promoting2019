@@ -113,8 +113,8 @@ section {
   margin-top: 0;
   margin-bottom: 0; }
   section .container {
-    padding-top: 6rem;
-    padding-bottom: 3rem; }
+    padding-top: 8rem;
+    padding-bottom: 4rem; }
 
 @media (max-width: 991.98px) {
   .section {
@@ -1299,6 +1299,16 @@ UL.ul--minus_lg {
       margin-left: -4.2rem;
       color: #d13927; }
 
+UL.ul--simple {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important; }
+  UL.ul--simple > li {
+    margin: 0.5rem 0 1rem 0 !important; }
+    UL.ul--simple > li:before {
+      content: '' !important;
+      margin: 0 !important; }
+
 OL {
   margin-bottom: 1.5rem;
   padding-left: 1.8rem; }
@@ -1929,7 +1939,7 @@ OL.ol--cont_lg {
         max-width: 200px; } }
 
 .sc_contacts {
-  background-color: white;
+  background-color: #eeeeee;
   background-image: url("../img/bk-s6.svg");
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -2215,7 +2225,7 @@ OL.ol--cont_lg {
 
 .block-portfoliolist {
   margin-bottom: 1px;
-  background-position: 50% 50%;
+  background-position: top 50%;
   background-size: cover;
   text-align: center; }
   .block-portfoliolist .container {
@@ -2226,7 +2236,120 @@ OL.ol--cont_lg {
     @media (max-width: 575.98px) {
       .block-portfoliolist .container {
         padding: 0; } }
+  .block-portfoliolist a {
+    display: block;
+    border: solid 2px white;
+    -webkit-transition: border-color 1s;
+    transition: border-color 1s; }
+    .block-portfoliolist a:hover {
+      border-color: #8ba3b3; }
   .block-portfoliolist img {
     width: 100%;
-    height: auto;
-    border: solid 1px white; }
+    height: auto; }
+
+.sc_portfolio {
+  background-position: top 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+
+.content-portfolio {
+  margin-bottom: 3rem; }
+
+.portfolio__mainhdr {
+  height: 32px;
+  max-width: 542px;
+  background: url("../img/sp-webhdr.png") left no-repeat;
+  padding-left: 125px;
+  border-radius: 5px 5px 0 0; }
+  @media (max-width: 575.98px) {
+    .portfolio__mainhdr {
+      display: none; } }
+  .portfolio__mainhdr a {
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 32px;
+    color: #666666; }
+    .portfolio__mainhdr a:hover {
+      color: #d13927; }
+
+.portfolio__mainpic {
+  max-width: 542px;
+  border: solid 1px #dee2e6; }
+  .portfolio__mainpic img {
+    width: 100%;
+    height: auto; }
+
+.portfolio__mainsubs {
+  margin-bottom: 3rem; }
+  .portfolio__mainsubs .mainsubs_logo {
+    margin-bottom: 1.5rem; }
+    @media (max-width: 575.98px) {
+      .portfolio__mainsubs .mainsubs_logo {
+        text-align: center; } }
+    .portfolio__mainsubs .mainsubs_logo img {
+      max-width: 280px; }
+  .portfolio__mainsubs .mainsubs_link {
+    margin-bottom: 3rem; }
+    @media (max-width: 575.98px) {
+      .portfolio__mainsubs .mainsubs_link {
+        text-align: center; } }
+    .portfolio__mainsubs .mainsubs_link a {
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: dashed 1px #008aea; }
+      .portfolio__mainsubs .mainsubs_link a:hover {
+        border-color: transparent; }
+
+.profolio__ulsubs {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  .profolio__ulsubs .ulsub-block {
+    margin-top: 3rem;
+    font-size: 1.4rem; }
+    .profolio__ulsubs .ulsub-block .hdr {
+      font-size: 1.6rem;
+      display: inline-block;
+      font-family: "Exo 2", Arial, Helvetica, sans-serif;
+      line-height: 1;
+      background: #8ba3b3;
+      color: white;
+      padding: 0.1rem 0.8rem 0.4rem 0.8rem;
+      border-radius: 3px;
+      margin-bottom: 1rem; }
+  .profolio__ulsubs ul {
+    margin: -0.5rem 0 0 0; }
+    .profolio__ulsubs ul > li {
+      list-style: none;
+      margin: 0.8rem 0 0.8rem -1.5rem; }
+      .profolio__ulsubs ul > li:before {
+        font-family: "Font Awesome 5 Pro";
+        font-weight: bold;
+        color: #8ba3b3;
+        content: '\f14a';
+        position: relative;
+        margin-right: 1rem;
+        margin-left: -2.3rem; }
+  .profolio__ulsubs i {
+    color: #666666; }
+
+.content-portfoliopics .portfoliopics__block {
+  height: 30rem;
+  overflow: hidden;
+  border: solid 2px #eeeeee;
+  margin-bottom: 3rem;
+  -webkit-transition: border-color 1s;
+  transition: border-color 1s; }
+  .content-portfoliopics .portfoliopics__block:hover {
+    border-color: #8ba3b3; }
+  .content-portfoliopics .portfoliopics__block img {
+    width: 100%;
+    height: auto; }
+
+.content-portfolioadapt {
+  text-align: center; }
+  .content-portfolioadapt img {
+    width: 100%;
+    max-width: 980px;
+    height: auto; }

@@ -135,6 +135,25 @@ UL.ul--minus_lg {
 
 }
 
+UL.ul--simple {
+	list-style: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+
+	> li {
+		margin: 0.5rem 0 1rem 0 !important;
+
+		&:before {
+			content: '' !important;
+			margin: 0 !important;
+		}
+
+	}
+
+}
+
+
+
 OL {
 	margin-bottom: 1.5rem;
 	padding-left: 1.8rem;
