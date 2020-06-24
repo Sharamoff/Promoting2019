@@ -1939,7 +1939,7 @@ OL.ol--cont_lg {
         max-width: 200px; } }
 
 .sc_contacts {
-  background-color: #eeeeee;
+  background-color: white;
   background-image: url("../img/bk-s6.svg");
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -2336,7 +2336,7 @@ OL.ol--cont_lg {
 
 .content-portfoliopics .portfoliopics__block {
   height: 30rem;
-  overflow: hidden;
+  overflow-y: auto;
   border: solid 2px #eeeeee;
   margin-bottom: 3rem;
   -webkit-transition: border-color 1s;

@@ -17,25 +17,28 @@ var gulp = require('gulp'),
 
 var path = {
 	build: {
-		html:   'BUILD/',
-		js:     'BUILD/js/',
-		css:    'BUILD/css/',
-		img:    'BUILD/img/',
-		fonts:  'BUILD/fonts/'
+		html:         'BUILD/',
+		js:           'BUILD/js/',
+		css:          'BUILD/css/',
+		img:          'BUILD/img/',
+        portfolio:    'BUILD/portfolio/',
+		fonts:        'BUILD/fonts/'
 	},
 	src: {
-		html:   'SRC/*.html',
-		js:     'SRC/js/*.js',
-		style:  'SRC/style/*.scss',
-		img:    'SRC/img/**/*.*',
-		fonts:  'SRC/fonts/**/*.*'
+		html:         'SRC/*.html',
+		js:           'SRC/js/*.js',
+		style:        'SRC/style/*.scss',
+		img:          'SRC/img/**/*.*',
+        portfolio:    'SRC/portfolio/**/*.*',
+		fonts:        'SRC/fonts/**/*.*'
 	},
 	watch: {
-		html:   'SRC/**/*.html',
-		js:     'SRC/js/**/*.js',
-		style:  'SRC/style/**/*.scss',
-		img:    'SRC/img/**/*.*',
-		fonts:  'SRC/fonts/**/*.*'
+		html:         'SRC/**/*.html',
+		js:           'SRC/js/**/*.js',
+		style:        'SRC/style/**/*.scss',
+		img:          'SRC/img/**/*.*',
+        portfolio:    'SRC/portfolio/**/*.*',
+        fonts:        'SRC/fonts/**/*.*'
 	},
 	clean: './build'
 };
@@ -98,6 +101,19 @@ gulp.task('image:build', function(done) {
 	done();
 });
 
+gulp.task('portfolio:build', function(done) {
+	return gulp.src(path.src.portfolio)
+		.pipe(cache(imagemin({
+			progressive: true,
+			svgoPlugins: [{removeViewBox: false}],
+			use: [pngquant()],
+			interlaced: true
+		})))
+		.pipe(gulp.dest(path.build.portfolio))
+		.pipe(reload({stream: true}));
+	done();
+});
+
 gulp.task('fonts:build', function(done) {
 	return gulp.src(path.src.fonts)
 		.pipe(gulp.dest(path.build.fonts));
@@ -109,7 +125,8 @@ gulp.task('build', gulp.parallel(
 	'js:build',
 	'style:build',
 	'fonts:build',
-	'image:build'
+	'image:build',
+    'portfolio:build'
 	)
 );
 
@@ -120,6 +137,7 @@ gulp.task('watch', function(done) {
 	gulp.watch(path.watch.style, gulp.series('style:build'));
 	gulp.watch(path.watch.fonts, gulp.series('fonts:build'));
 	gulp.watch(path.watch.img, gulp.series('image:build'));
+    gulp.watch(path.watch.portfolio, gulp.series('portfolio:build'));
 	done();
 });
 
