@@ -12,7 +12,7 @@
 
 .block-faq {
   position: relative;
-  padding: 1.5rem 1.5rem 1rem 8rem;
+  padding: 1.5rem 1.5rem 1rem 5rem;
   background: $c-white;
   border-radius: 1rem;
   margin: 3rem auto;
@@ -20,18 +20,21 @@
   .faq__sign {
     position: absolute;
     z-index: 1;
-    top: -1.5rem;
+    top: -1rem;
     left: -1rem;
     color: $c-orange-lighter;
-    font-size: 8rem;
+    font-size: 6rem;
   }
 
   .faq__qwest {
     position: relative;
     z-index: 2;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
     font: bold 2.1rem $font-family-hdr;
     color: $c-orange-dark;
     line-height: $line-height-min;
+    cursor: pointer;
   }
 
   .faq__answ {
