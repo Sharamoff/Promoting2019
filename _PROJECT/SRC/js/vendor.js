@@ -2,7 +2,7 @@
 
 //= vendor/jquery.min.js
 //= vendor/popper.min.js
-//= vendor/bootstrap.min.js
+//= vendor/bootstrap.bundle.min.js
 
 //= vendor/wow.js
 

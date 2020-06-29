@@ -32,6 +32,11 @@ BODY {
 	color: $color-text;
 	line-height: $line-height-def;
 	position: relative;
+
+	&.modal-open {
+		padding-right: 0 !important;
+	}
+
 }
 
 

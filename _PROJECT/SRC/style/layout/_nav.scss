@@ -175,34 +175,34 @@
 
 	}
 
-	.bar_button {
-		display: block;
-		width: 34px;
-		height: 34px;
-		border-radius: 50%;
-		border: solid 1px $c-orange;
-		text-align: center;
-		line-height: 32px;
-		margin-left: auto;
-		margin-right: auto;
-
-		@include media-breakpoint-down(mx) {
-			width: 30px;
-			height: 30px;
-			line-height: 28px;
-		}
-
-		&:hover {
-			border: solid 1px $color-link-hover;
-		}
-
-	}
-
 	.bar-telicons {
 		text-align: center;
 
 		@include media-breakpoint-down(sm) {
 			display: none;
+		}
+
+		.bar_button {
+			display: block;
+			width: 34px;
+			height: 34px;
+			border-radius: 50%;
+			border: solid 1px $c-orange;
+			text-align: center;
+			line-height: 32px;
+			margin-left: auto;
+			margin-right: auto;
+
+			@include media-breakpoint-down(mx) {
+				width: 30px;
+				height: 30px;
+				line-height: 28px;
+			}
+
+			&:hover {
+				border: solid 1px $color-link-hover;
+			}
+
 		}
 
 		&__call {
@@ -221,12 +221,7 @@
 			}
 
 			&:hover {
-				background-position: -2px -35px;
-
-				@include media-breakpoint-down(md) {
-					background-position: -4px -36px;
-				}
-
+				background-position: -4px -36px;
 			}
 
 		}
@@ -241,10 +236,10 @@
 			text-transform: none;
 			font: 2.1rem $font-family-hdr;
 			white-space: nowrap;
-			margin-bottom: 5rem;
+			margin-bottom: 3rem;
 
 			@include media-breakpoint-only(mx) {
-				display: none;
+				display: none !important;
 			}
 
 			@include media-breakpoint-down(md) {
@@ -261,7 +256,7 @@
 			transition: .3s;
 
 			@include media-breakpoint-only(mx) {
-				display: none;
+				display: none !important;
 			}
 
 			@include media-breakpoint-down(md) {
@@ -286,7 +281,7 @@
 			transition: .3s;
 
 			@include media-breakpoint-only(mx) {
-				display: none;
+				display: none !important;
 			}
 
 			@include media-breakpoint-down(md) {
@@ -311,7 +306,7 @@
 			transition: .3s;
 
 			@include media-breakpoint-only(mx) {
-				display: none;
+				display: none !important;
 			}
 
 			@include media-breakpoint-down(md) {

@@ -39,7 +39,7 @@
 		</a>
 
 		<div class="bar-telicons">
-			<a href="#" class="bar-telicons__call bar_button" title="Заказать звонок"></a>
+			<a href="#" class="bar-telicons__call bar_button" data-toggle="modal" data-target="#modal_call" title="Заказать звонок"></a>
 			<a href="tel:+74952152322" class="bar-telicons__phone">+7 495 215 23 22</a>
 			<a href="#" class="bar-telicons__promoting bar_button" title="Блог компании"></a>
 			<a href="#" class="bar-telicons__instagram bar_button" title="Инстаграм компании"></a>
@@ -534,6 +534,44 @@
 
 
 
+</div>
+
+
+
+
+
+<div class="modal fade" id="modal_call" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+
+			<div class="modal-header">
+				<p class="mainhdr">Заказать звонок</p>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+
+
+			<div class="modal-body">
+
+				<p class="modal-body__note">Заполнив форму ниже, Вы можете быть уверены, что мы свяжемся с Вами в ближайшее время.</p>
+
+				<form role="form" action="" name="fm-contacts" id="fm-contacts">
+					<div class="form-group">
+						<label for="fld-cname">Ваши ФИО</label>
+						<input type="text" id="fld-cname" class="form-control input-lg">
+					</div>
+					<div class="form-group">
+						<label for="fld-ctel">Ваш телефон</label>
+						<input type="tel" id="fld-ctel" class="form-control input-lg">
+					</div>
+					<button type="submit" name="b-submit__call" class="btn" data-dismiss="modal">Заказать звонок</button>
+				</form>
+
+			</div>
+
+
+		</div>
+	</div>
 </div>
 
 

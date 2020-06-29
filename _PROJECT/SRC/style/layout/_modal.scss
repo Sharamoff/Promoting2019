@@ -7,28 +7,20 @@
 
 }
 
-
-
-.modal-open {
-
-}
-
 .modal-dialog {
 
 	.modal-content {
 		padding: 0 !important;
-		color: $c-white !important;
-		background: transparentize($c-gray, 0.10) !important;
-		border: solid 3px $c-gray;
+		color: $c-gray-dark !important;
+		background: $c-orange;
 	}
 
 	.modal-header {
 		position: relative;
 		padding: 1.5rem 3rem;
 		margin: 0;
-		color: $c-gray-lightermore;
+		color: $c-white;
 		border-color: transparent;
-		box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);;
 
 		@include media-breakpoint-only(xs) {
 			padding: 1.5rem;
@@ -36,16 +28,16 @@
 
 		.mainhdr {
 			font-size: $font-size-h2;
-			color: $c-gray-lightermore;
+			color: $c-black;
 			text-shadow: none;
-			margin: 0;
+			margin: 1.5rem 0 0 0;
 		}
 
 		button.close {
 			position: absolute;
 			top: 0.5rem;
 			right: 1rem;
-			color: $c-gray-lightermore;
+			color: $c-white;
 			font-size: 3rem;
 			font-weight: normal;
 		}
@@ -53,7 +45,7 @@
 	}
 
 	.modal-body {
-		padding: 0.5rem 3rem;
+		padding: 0 3rem 3rem 3rem;
 		max-height: 40vh;
 		overflow-y: auto;
 		@include clearfix;
@@ -63,11 +55,38 @@
 			max-height: initial;
 		}
 
+		&__note {
+			font-size: $font-size-basemin;
+			color: $c-black;
+		}
+
+		label {
+			color: $c-white;
+			margin-bottom: 0.5rem;
+		}
+
+		input[type="text"],
+		input[type="tel"] {
+			border-color: transparent;
+			opacity: 0.85;
+			padding: 2rem;
+		}
+
+	}
+
+	button[type="submit"] {
+		margin-top: 3rem;
 	}
 
 }
 
+#modal_call {
 
+	.modal-content {
+		background: $c-orange url("../img/bk-call.svg") 100%+5 100%+10 no-repeat;
+	}
+
+}
 
 
 
